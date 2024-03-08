@@ -1,0 +1,227 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+label{
+    font-size: 15px;
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 550;
+    font-family: sans-serif;
+}
+
+#amazon-cont{
+    height: 723px;
+    width: 1349px;
+    padding: 14px 18px 14px 18px;
+}
+
+
+
+
+#logo{
+   width: 1313px;
+   height: 55px;
+   text-align: center;
+   line-height: 19px;
+   letter-spacing: normal;
+   
+}
+
+#mainlogo{
+    width: 120px;
+    height: 55px;
+}
+
+
+
+
+#mainform{
+    font-size: 13px;
+    border-radius: 8px;
+    width: 348px;
+    height: auto;
+    padding: 14px 18px 14px 18px;
+    text-align: center;
+    margin: auto;
+    border: 0.909091px solid rgb(221, 221, 221);
+    
+
+}
+
+#createAcc{
+    width: 312px;
+    height: 37px;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    text-align: start;
+
+}
+
+#createAcc h1{
+    font-size: 28px;
+    line-height: 1.2rem;
+    text-align: start;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    
+} 
+
+
+
+#yourname{
+    width: 312px;
+    height: 21px;
+    text-align: start;
+    font-size: 13px;
+   
+
+}
+
+#nameinput{
+    width: 312px;
+    height: 31px;
+    border-radius: 3px;
+   
+
+}
+
+#code{
+    outline: none;
+    padding: 6px;
+    border: 0.8px solid #b8b8b8;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.07) inset;
+}
+
+#name{
+    text-align: start;
+    font-size: 13px;
+    padding: 8px;
+    width: 312px;
+    height: 31px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #a6a6a6;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.07) inset;
+    
+}
+
+
+
+
+#mobile{
+    width: 312px;
+    height: 21px;
+    text-align: start;
+    font-size: 13px;
+    margin-top: 14px;
+    
+}
+
+#mobileinput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 312px;
+    height: 31px;
+    border-radius: 3px;
+    outline: none;
+    gap: 20px;
+   
+
+}
+
+#mobilenum{
+    padding: 8px;
+    width: 312px;
+    height: 31px;
+    border-radius: 3px;
+    border: 1px solid #a6a6a6;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.07) inset;
+    
+
+}
+
+#password{
+    width: 312px;
+    height: 21px;
+    text-align: start;
+    font-size: 13px;
+    margin-top: 14px;
+
+}
+
+#passwordinput{
+    width: 312px;
+    height: 31px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#passwordval{
+    width: 312px;
+    height: 31px;
+    border-radius: 3px;
+    border: 1px solid #b8b8b8;
+    padding: 8px;
+   
+}
+
+
+#passwordquote{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+}
+
+#passwordquote p{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#passwordquote i{
+  color: #3488AA;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#verifynum{
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+
+}
+#verifynum p{
+    font-size: 13px;
+    line-height: 19px;
+    padding-top: 6px;
+
+}
+
+#verifybtn{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+#verify{
+    width: 100%;
+    padding: 8px;
+    background-color: #FFD814;
+    border: none;
+    border-radius: 7px;
+}
+
+
