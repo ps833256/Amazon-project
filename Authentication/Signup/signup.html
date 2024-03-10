@@ -35,17 +35,17 @@
           <select name="" id="code">
             <option value="">IN +91</option>
           </select>
-          <input type="text" id="mobilenum" placeholder="Mobile number" />
+          <input type="number" id="mobilenum" placeholder="Mobile number" />
         </div>
 
         <div id="password">
-          <label for="Password">Password</label>
+          <label for="password">Password</label>
         </div>
         <div id="passwordinput">
           <input
             type="password"
             id="passwordval"
-            placeholder="At least 6 characters"
+            placeholder="At least 6 characters" minlength="6"
           />
         </div>
 
@@ -74,7 +74,7 @@
         </div>
 
         <div id="already">
-          <p>Already have an account? <a href="">Sign in</a></p>
+          <p>Already have an account? <a href="../Login/login.html" target="_blank">Sign in</a></p>
         </div>
 
         <div id="privacy">
@@ -100,4 +100,5 @@
 
     </div>
   </body>
+  <script src="signup.js"></script>
 </html>

@@ -12,15 +12,17 @@
 }
 
 #logodiv{
+    cursor: pointer;
     width: 1313px;
-    height: 45px;
-    margin-top: 14px;
+    height: 60px;
     text-align: center;
+    line-height: 19px;
+    letter-spacing: normal;
 }
 
 #logo{
     width: 103px;
-    height:45px;
+    height:54px;
 }
 
 #formdiv{
