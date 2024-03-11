@@ -20,10 +20,11 @@ document.getElementById("signinbtn").addEventListener("click",function(){
       homepage.setAttribute("href", "../../Homepage/home.html")
       homepage.click()
 
-    }else{
+    }else if(passwordval==="")
+       alert("Please fill your password")
+    
+    else{
         alert("Wrong password")
     }
 
 })
-
-
