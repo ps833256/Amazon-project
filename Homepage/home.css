@@ -1,0 +1,319 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+#navbarcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background-color: #131921;
+    justify-content: space-evenly;
+
+}
+
+#logodiv{
+    cursor: pointer;
+    height: 30px;
+    padding: 1px 8px 1px 6px;
+    margin: 1px;
+}
+
+#logo{
+    height: 30px;
+    padding: 1px 8px 1px 6px;
+    margin: 1px;
+    object-fit: contain;
+}
+
+#deliveringdiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+   
+}
+
+#location{
+    color: white;
+}
+
+
+
+
+
+#locationdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+#locationdiv i{
+    color: #d6d6d6;
+    font-size: 14px;
+    line-height: 39px;
+    text-align: start;
+    
+
+}
+
+#locationdiv{
+    height: 35px;
+    gap: 2px;
+}
+
+#deliverto{
+   font-size: 12px;
+   color: #cccccc;
+   line-height: 14px;
+   text-align: start;
+
+}
+
+#update{
+    font-weight: 700;
+    font-size: 14px;
+    text-align: start;
+    color: #ffffff;
+    line-height: 15px;
+
+}
+
+#searchbarcont{
+    width: 45%;
+    height: 60px;
+    padding: 8px;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#searchbarcont select{
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 10%;
+    padding: 10px 4px 10px 3px;
+    font-size: 14px;
+    text-align: start;
+    border: none;
+    background-color: #E6E6E6;
+}
+
+#search{
+    outline: 0;
+    border: none;
+    padding: 10px 4px 9px 3px;
+    font-size: 15px;
+    text-align: start;
+    width: 80%;
+    padding-left: 10px;
+
+}
+
+#searchicon{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 42px;
+    background-color: #f3a847;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+#searchicon i{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1px;
+    color: #131921;
+}
+
+#searchbarcont:focus{
+    border: 1px solid  #f3a847;;
+}
+
+
+#logodiv:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#deliveringdiv:hover{
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+#searchbarcont select:hover{
+    cursor: pointer;
+    background-color: #ccc6c6;
+
+}
+
+#searchicon:hover{
+    cursor: pointer;
+    background-color: #e48a0c;
+
+}
+
+
+#lanselectdiv{
+    height: 50px;
+    padding: 8px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+#lang{
+    border: none;
+    background-color: #131921;
+    color: #ccc6c6;
+    font-size: 14px;
+    text-align: start;
+    line-height: 15px;
+
+}
+
+#flag{
+    height: 26px;
+    margin-bottom: 1px;
+    margin-right: 2px;
+}
+
+#signindiv{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    
+}
+
+
+#hello{
+color: #ccc6c6;
+font-size: 12px;
+text-align: start;
+line-height: 14px;
+
+}
+
+#account{
+background-color: #131921;
+color: #ccc6c6;
+font-size: 14px;
+text-align: start;
+line-height: 14px;
+border: none;
+font-weight: 700;
+
+}
+
+#signindiv:hover{
+    cursor: pointer;
+    border: 1px solid #ccc6c6;
+}
+
+#lanselectdiv:hover{
+    cursor: pointer;
+    border: 1px solid #ccc6c6;
+}
+
+#returndiv{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+#returns{
+    color: #ccc6c6;
+    font-size: 12px;
+    text-align: start;
+    line-height: 14px;
+}
+
+
+#orders{
+    background-color: #131921;
+    color: #ccc6c6;
+    font-size: 14px;
+    text-align: start;
+    line-height: 14px;
+    font-weight: 700;
+    
+}
+
+#cartdiv{
+    height: 50px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#cartdiv i{
+    font-size: 24px;
+    color: #ccc6c6;
+    text-align: start;
+}
+
+#cartdiv p{
+    font-size: 14px;
+    color: #ccc6c6;
+    text-align: start;
+    font-weight: 700;
+    align-self: flex-end;
+
+}
+
+#returndiv:hover{
+    cursor: pointer;
+    border: 1px solid #ccc6c6;
+
+}
+
+#cartdiv:hover{
+    cursor: pointer;
+    border: 1px solid #ccc6c6;
+
+}
+
+#lanselectdiv{
+    position: relative;
+}
+
+#langhoverdiv{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: #e48a0c;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+#langmaindiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#option1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
