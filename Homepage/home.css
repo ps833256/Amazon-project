@@ -7,8 +7,9 @@
     
 }
 
+
 #navbarcont{
-    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -298,6 +299,7 @@ font-weight: 700;
 }
 
 #langhoverdiv{
+    background-color: white;
     display: none;
     position: absolute;
     left: 0%;
@@ -424,6 +426,7 @@ input[type="radio"] {
 
 
   #signinhoverdiv{
+    background-color: white;
     display: none;
     width: 450%;
     position: absolute;
@@ -556,4 +559,64 @@ input[type="radio"] {
 #youraccountdiv a:hover{
     color: #c45500;
     text-decoration: underline;
+}
+
+
+/* Navbar2 */
+
+#navbar2cont{
+    width: 100%;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#allicon{
+    font-weight: 700;
+    color: white;
+    gap: 10px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    padding: 7px 8px 7px 8px;
+}
+
+#allicon i{
+    color: white;
+    font-size: 25px;
+}
+
+#menuoptions a{
+    text-decoration: none;
+    color: white;
+   margin-right: 10px;
+}
+#menuoptions a:hover{
+    border: 1px solid #cccccc;
+}
+
+
+#allicon:hover{
+    border: 1px solid #cccccc;
+
+}
+
+#mainsectioncontainer{
+    width: 100%;
+    height: auto;
+}
+
+#bckgroundimg{
+    width: 100%;
+    height: auto;
+}
+
+#heroimg{
+    width: 100%;
+    height: auto;
+  
 }
