@@ -299,6 +299,7 @@ font-weight: 700;
 }
 
 #langhoverdiv{
+    z-index: 1;
     background-color: white;
     display: none;
     position: absolute;
@@ -426,6 +427,7 @@ input[type="radio"] {
 
 
   #signinhoverdiv{
+    z-index: 1;
     background-color: white;
     display: none;
     width: 450%;
@@ -599,8 +601,11 @@ input[type="radio"] {
     border: 1px solid #cccccc;
 }
 
+#allicon i:hover{
+    border: 1px solid #cccccc;
 
-#allicon:hover{
+}
+#allicon p:hover{
     border: 1px solid #cccccc;
 
 }
@@ -620,3 +625,106 @@ input[type="radio"] {
     height: auto;
   
 }
+
+#allicon{
+    position: relative;
+    cursor: pointer;
+}
+
+
+#allhoverdiv{
+    display: none;
+    position: absolute;
+    top: -160%;
+    left: -5%;
+    flex-direction: column;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+
+#hellosignnav{
+    padding-left: 30px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232f3e;
+    width: 120%;
+    cursor: pointer;
+}
+
+#crossicon{
+    text-align: end;
+}
+
+#hellofirstsec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+#profilesignin{
+    text-wrap: nowrap;
+    font-size: 19px;
+    white-space: nowrap;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+#hellosignnav i{
+    height: 25px;
+    width: 27px;
+    margin:  0 10px 0 36px;
+}
+
+
+#trendingmenuoptionscont{
+    padding-left: 60px;
+    width: 120%;
+    color: #0f1111;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: scroll;
+    height: 100vh;
+      
+    
+}
+
+#trendingmenuoptionscont p{
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 12px;
+   
+}
+
+.headings{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #111;
+}
+
+
+
+.borders{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: 0.00001px solid #ccc6c6;
+
+}
+
+
+

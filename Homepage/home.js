@@ -29,3 +29,14 @@ document.getElementById("signindiv").addEventListener("mouseout", function(){
 
     
 });
+
+
+document.getElementById("baricon").addEventListener("click",function(){
+    document.getElementById("allhoverdiv").style.display= "block";
+})
+
+document.getElementById("crossicon").addEventListener("click",function(event){
+    event.stopPropagation()
+    
+    document.getElementById("allhoverdiv").style.display= "none";
+})
