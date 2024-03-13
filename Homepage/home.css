@@ -611,11 +611,51 @@ input[type="radio"] {
 }
 
 #mainsectioncontainer{
+    position: relative;
     width: 100%;
     height: auto;
+    
 }
 
+
+#lefticon{
+    
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50,-50);
+}
+
+
+
+
+
+#righticon{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translate(-50,-50);
+}
+
+#lefticon i{
+    font-size: 40px;
+    color: white;
+   
+}
+
+#righticon i{
+    font-size: 40px;
+    color: white;
+    
+}
+
+
+
+
 #bckgroundimg{
+    
     width: 100%;
     height: auto;
 }
@@ -633,6 +673,7 @@ input[type="radio"] {
 
 
 #allhoverdiv{
+    z-index: 1;
     display: none;
     position: absolute;
     top: -160%;
@@ -727,4 +768,38 @@ input[type="radio"] {
 }
 
 
+#allhoverdiv {
+    animation-name: example;
+    animation-duration: 1s;
+    
+}
 
+@keyframes example {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    
+    }
+}
+
+
+#cont{
+    animation-name: example;
+    animation-duration: 1s;
+
+}
+
+
+@keyframes example {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    
+    }
+}
