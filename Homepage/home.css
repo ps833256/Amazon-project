@@ -196,7 +196,7 @@
     height: 50px;
     display: flex;
     flex-direction: column;
-   
+    position: relative;
     justify-content: center;
     
 }
@@ -564,6 +564,7 @@ input[type="radio"] {
 }
 
 
+  
 /* Navbar2 */
 
 #navbar2cont{
@@ -802,4 +803,99 @@ input[type="radio"] {
         opacity: 1;
     
     }
+}
+
+#firstimgdiv img{
+    width: 160px;
+
+}
+
+#secondimgdiv img{
+    width: 160px;
+    
+
+}
+
+#thirdimgdiv img{
+    width: 160px;
+   
+}
+
+#forthimgdiv img{
+    width: 160px;
+    
+
+}
+
+#cardcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 356px;
+    height: 420px;
+    position: absolute;
+    top: 70%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+}
+
+
+#firstsection{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   justify-content: center;
+   padding: 10px;
+}
+
+
+#secondsection{
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   justify-content: center;
+
+}
+
+#cardcontainer h1{
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27.3px;
+
+}
+
+#endofseson{
+    text-decoration: none;
+    margin-top: 20px;
+    color: #3578BC;
+   
+}
+
+#endofseson:hover{
+    text-decoration: underline;
+    color: #c45500;
+}
+
+#firstimgdiv:hover{
+    cursor: pointer;
+}
+
+#secondimgdiv:hover{
+    cursor: pointer;
+}
+
+
+#thirdimgdiv:hover{
+    cursor: pointer;
+}
+
+#forthmgdiv:hover{
+    cursor: pointer;
 }
