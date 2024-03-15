@@ -75,9 +75,9 @@ let bannerdata = [
 
   changeImage();
 
-  
+  //card-1 //
 
-  let data= [ 
+  let data1= [ 
     { card1: { heading: "Up to 60% off | Styles for men",
    image1: "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg",
    title1: "Clothing",
@@ -90,75 +90,160 @@ let bannerdata = [
    
    ending: "End of season sale"
    }}]
+
    
    
-   for(let i = 0; i < data.length; i++){
+   for(let i = 0; i < data1.length; i++){
    
     let head= document.createElement("h1")
-    head.innerText= data[0].card1.heading
+    head.innerText= data1[0].card1.heading
    
     let firstimgdiv= document.createElement("div")
     let secondimgdiv= document.createElement("div")
     let thirdimgdiv= document.createElement("div")
-    thirdimgdiv.setAttribute("id", "thirdimgdiv")
+    thirdimgdiv.setAttribute("class", "thirdimgdiv")
     let forthimgdiv= document.createElement("div")
-    forthimgdiv.setAttribute("id", "forthimgdiv")
+    forthimgdiv.setAttribute("class", "forthimgdiv")
    
     let firstsection= document.createElement("div")
-    firstsection.setAttribute("id", "firstsection")
+    firstsection.setAttribute("class", "firstsection")
     let secondsection= document.createElement("div")
-    secondsection.setAttribute("id", "secondsection")
+    secondsection.setAttribute("class", "secondsection")
    
    
     let card1img= document.createElement("img")
-    card1img.setAttribute("src", data[0].card1.image1)
+    card1img.setAttribute("src", data1[0].card1.image1)
    
     let img1titile= document.createElement("p")
-    img1titile.innerText= data[0].card1.title1
+    img1titile.innerText= data1[0].card1.title1
    
     firstimgdiv.append(card1img, img1titile)
-    firstimgdiv.setAttribute("id", "firstimgdiv")
+    firstimgdiv.setAttribute("class", "firstimgdiv")
    
     let card2img= document.createElement("img")
-    card2img.setAttribute("src", data[0].card1.image2)
+    card2img.setAttribute("src", data1[0].card1.image2)
    
     let img2titile= document.createElement("p")
-    img2titile.innerText= data[0].card1.title2
+    img2titile.innerText= data1[0].card1.title2
    
     secondimgdiv.append(card2img, img2titile)
-    secondimgdiv.setAttribute("id", "secondimgdiv")
+    secondimgdiv.setAttribute("class", "secondimgdiv")
    
    
     let card3img= document.createElement("img")
-    card3img.setAttribute("src", data[0].card1.image3)
+    card3img.setAttribute("src", data1[0].card1.image3)
    
     let img3titile= document.createElement("p")
-    img3titile.innerText= data[0].card1.title3
+    img3titile.innerText= data1[0].card1.title3
    
     thirdimgdiv.append(card3img,img3titile)
    
    
     let card4img= document.createElement("img")
-    card4img.setAttribute("src", data[0].card1.image4)
+    card4img.setAttribute("src", data1[0].card1.image4)
    
     let img4titile= document.createElement("p")
-    img4titile.innerText= data[0].card1.title4
+    img4titile.innerText= data1[0].card1.title4
    
    
     let endofseson= document.createElement("a")
-    endofseson.innerText= data[0].card1.ending
+    endofseson.innerText= data1[0].card1.ending
     endofseson.setAttribute("id", "endofseson")
     endofseson.setAttribute("href", "#")
    
     forthimgdiv.append(card4img, img4titile)
    
-   
     secondsection.append(thirdimgdiv,forthimgdiv)
     firstsection.append(firstimgdiv,secondimgdiv)
    
-    document.getElementById("cardcontainer").append(head, firstsection, secondsection, endofseson)
+    document.getElementById("card1").append(head, firstsection, secondsection, endofseson)
+   document.querySelector(".cardcontainer").append(card1)
    
    
 }
    
+// card-2 //
 
+
+let data2= [
+    {card2:{ heading: "Appliances for your home | Up to 55% off",
+image1: "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg",
+title1: "Air conditioners",
+image2: "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg",
+title2 : "Refrigerator",
+image3: "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg",
+title3: "Microwaves",
+image4: "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg",
+title4: "Washing Machine",
+
+ending: "See more" }}]
+
+
+for(let i = 0; i < data2.length; i++){
+   
+    let head= document.createElement("h1")
+    head.innerText= data2[0].card2.heading
+   
+    let firstimgdiv= document.createElement("div")
+    let secondimgdiv= document.createElement("div")
+    let thirdimgdiv= document.createElement("div")
+    thirdimgdiv.setAttribute("class", "thirdimgdiv")
+    let forthimgdiv= document.createElement("div")
+    forthimgdiv.setAttribute("class", "forthimgdiv")
+   
+    let firstsection= document.createElement("div")
+    firstsection.setAttribute("class", "firstsection")
+    let secondsection= document.createElement("div")
+    secondsection.setAttribute("class", "secondsection")
+   
+   
+    let card1img= document.createElement("img")
+    card1img.setAttribute("src", data2[0].card2.image1)
+   
+    let img1titile= document.createElement("p")
+    img1titile.innerText= data2[0].card2.title1
+   
+    firstimgdiv.append(card1img, img1titile)
+    firstimgdiv.setAttribute("class", "firstimgdiv")
+   
+    let card2img= document.createElement("img")
+    card2img.setAttribute("src", data2[0].card2.image2)
+   
+    let img2titile= document.createElement("p")
+    img2titile.innerText= data2[0].card2.title2
+   
+    secondimgdiv.append(card2img, img2titile)
+    secondimgdiv.setAttribute("class", "secondimgdiv")
+   
+   
+    let card3img= document.createElement("img")
+    card3img.setAttribute("src", data2[0].card2.image3)
+   
+    let img3titile= document.createElement("p")
+    img3titile.innerText= data2[0].card2.title3
+   
+    thirdimgdiv.append(card3img,img3titile)
+   
+   
+    let card4img= document.createElement("img")
+    card4img.setAttribute("src", data2[0].card2.image4)
+   
+    let img4titile= document.createElement("p")
+    img4titile.innerText= data2[0].card2.title4
+   
+   
+    let endofseson= document.createElement("a")
+    endofseson.innerText= data2[0].card2.ending
+    endofseson.setAttribute("id", "endofseson")
+    endofseson.setAttribute("href", "#")
+   
+    forthimgdiv.append(card4img, img4titile)
+   
+    secondsection.append(thirdimgdiv,forthimgdiv)
+    firstsection.append(firstimgdiv,secondimgdiv)
+   
+    document.getElementById("card2").append(head, firstsection, secondsection, endofseson)
+   document.querySelector(".cardcontainer").append(card2)
+
+
+}
