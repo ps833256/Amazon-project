@@ -731,59 +731,46 @@ input[type="radio"]:checked {
 }
 
 .firstimgdiv img {
-  width: 160px;
+  width: 150px;
 }
 
 .secondimgdiv img {
-  width: 160px;
+  width: 150px;
 }
 
 .thirdimgdiv img {
-  width: 160px;
+  width: 150px;
 }
 
 .forthimgdiv img {
-  width: 160px;
-}
-
-#wholecardcont {
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#card2{
-    background-color: white;
-    margin-left: 10px;
-  width: 356px;
-  height: 420px;
-  padding: 10px;
+  width: 150px;
 }
 
 .cardcontainer {
-    gap: 50px;
+  gap: 15px;
   display: flex;
   flex-direction: row;
   margin-left: 10px;
-  width: 356px;
+  width: 1300px;
   height: 420px;
   position: absolute;
   top: 70%;
   padding: 10px;
-  background-color: white;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
+
+
+
+
 .firstsection {
+  padding: 10px;
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   justify-content: center;
-  padding: 10px;
+
 }
 
 .secondsection {
@@ -803,13 +790,7 @@ input[type="radio"]:checked {
   line-height: 27.3px;
 }
 
-#card2 h1{
-    margin-top: 10px;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 27.3px;
 
-}
 
 #endofseson {
   text-decoration: none;
@@ -836,4 +817,28 @@ input[type="radio"]:checked {
 
 .forthimgdiv:hover {
   cursor: pointer;
+}
+
+
+#card1{
+  padding: 15px;
+ width:326px;
+ height: 420px;
+  background-color: white;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+#card2{
+  padding: 15px;
+  width:326px;
+ height: 420px;
+  background-color: white;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+#wholecardcont{
+  width: auto;
+  height: auto;
 }
