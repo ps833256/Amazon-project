@@ -577,6 +577,7 @@ input[type="radio"]:checked {
   position: relative;
   width: 100%;
   height: auto;
+  margin-bottom: 300px;
 }
 
 #lefticon {
@@ -854,8 +855,6 @@ body{
 }
 
 
-
-
 #endofseson {
   text-decoration: none;
   margin-top: 10px;
@@ -917,8 +916,6 @@ body{
     0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-
-
 #card4{
   padding: 15px;
   width:326px;
@@ -944,10 +941,8 @@ color: #c45500;
 }
 
 .cardcontainer2 {
-  top: 150%;
   padding: 10px;
   background-color: #E3E6E6;
-  position: absolute; 
   gap: 20px;
   display: flex;
   flex-direction: row;
@@ -994,3 +989,19 @@ color: #c45500;
   0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
+
+/* cardcontainer3 */
+
+.cardcontainer3{
+  padding: 10px;
+  background-color: #E3E6E6;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+  
+
+}
