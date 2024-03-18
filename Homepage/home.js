@@ -780,3 +780,338 @@ for (let i = 0; i < data8.length; i++) {
 
 
 }
+
+
+
+// today's deals section//
+
+let todaydealsdata= [
+    {mobdiv:{ heading: "Todays Deals",
+    subanchor: "See all deals",
+    limited: "Limited time deals",
+image1: "https://m.media-amazon.com/images/I/41WnWm3IjiL._AC_SY200_.jpg",
+title1: "Up to 20% off",
+title2: "iQOO Z9 5G || Newly Launched @17999",
+image2: "https://m.media-amazon.com/images/I/41m-C1HHkIL._AC_SY200_.jpg",
+title3: "Up to 11% off",
+title4: "iQOO Neo9 Pro | Starting 35999 Including add. offersiQOO Neo9 Pro | Starting 35999 Inclu…",
+image3: "https://m.media-amazon.com/images/I/41yAce7gd4L._AC_SY200_.jpg",
+title5: "11% off",
+title6: "iQOO Z7 Pro | Most loved Smartphone @21999iQOO Z7 Pro | Most loved Smartphon…",
+image4: "https://m.media-amazon.com/images/I/411gvmvNQzL._AC_SY200_.jpg",
+title7: "Up to 12% off",
+title8: "iQOO 12 5G | India's only Flagship with 50MP @ 50999iQOO 12 5G | India's only Flagship wit…",
+image5: "https://m.media-amazon.com/images/I/411iWoJEJjL._AC_SY200_.jpg",
+title9: "Up to 37% off",
+title10: "Redmi 13C | Starting from 7799 including additional offersRedmi 13C | Starting from 7799 inclu…",
+image6: "https://m.media-amazon.com/images/I/51JaSbauK3L._AC_SY200_.jpg",
+title11: "30% off",
+title12: "₹19,999.00M.R.P.: ₹28,499.00 Samsung Galaxy M34Samsung Galaxy M34",
+image7: "https://m.media-amazon.com/images/I/41888-BWxKL._AC_SY200_.jpg",
+title13: "45% off",
+title14: "₹5,999.00M.R.P.: ₹10,999.00 POCO C51 | Starting from 5499 including additional offersPOCO C51 | Starting from 5499 includ…",
+image8: "https://m.media-amazon.com/images/I/51o13K4h3-L._AC_SY200_.jpg",
+title15: "Up to 23% off",
+title16: "iQOO Neo 7 Pro | Powerful Smartphone @29999iQOO Neo 7 Pro | Powerful Smartpho…",
+image9: "https://m.media-amazon.com/images/I/41ArHnIL7uL._AC_SY200_.jpg",
+title17: "54% off",
+title18: "₹6,499.00M.R.P.: ₹13,999.00 POCO C55 | Starting from 5999 including additional offersPOCO C55 | Starting from 5999 includ…",
+image10: "https://m.media-amazon.com/images/I/41dEcQR7UnL._AC_SY200_.jpg",
+title19: "36% off",
+title20: "₹8,999.00M.R.P.: ₹13,999.00 Starting from 8999 including additional offersStarting from 8999 including addition…",
+}}]
+
+
+
+for(let i= 0; i< todaydealsdata.length; i++){
+
+    let product1div= document.createElement("div")
+    product1div.setAttribute("class", "product1")
+
+    let product2div= document.createElement("div")
+    product2div.setAttribute("class", "product1")
+
+    let product3div= document.createElement("div")
+    product3div.setAttribute("class", "product1")
+
+    let product4div= document.createElement("div")
+    product4div.setAttribute("class", "product1")
+
+    let product5div= document.createElement("div")
+    product5div.setAttribute("class", "product1")
+
+    let product6div= document.createElement("div")
+    product6div.setAttribute("class", "product1")
+
+    let product7div= document.createElement("div")
+    product7div.setAttribute("class", "product1")
+
+    let product8div= document.createElement("div")
+    product8div.setAttribute("class", "product1")
+
+    let product9div= document.createElement("div")
+    product9div.setAttribute("class", "product1")
+
+    let product10div= document.createElement("div")
+    product10div.setAttribute("class", "product1")
+
+
+    let imgdiv1= document.createElement("div")
+    imgdiv1.setAttribute("class", "imgdiv")
+
+    let imgdiv2= document.createElement("div")
+    imgdiv2.setAttribute("class", "imgdiv")
+
+    let imgdiv3= document.createElement("div")
+    imgdiv3.setAttribute("class", "imgdiv")
+
+    let imgdiv4= document.createElement("div")
+    imgdiv4.setAttribute("class", "imgdiv")
+
+    let imgdiv5= document.createElement("div")
+    imgdiv5.setAttribute("class", "imgdiv")
+
+    let imgdiv6= document.createElement("div")
+    imgdiv6.setAttribute("class", "imgdiv")
+
+    let imgdiv7= document.createElement("div")
+    imgdiv7.setAttribute("class", "imgdiv")
+
+    let imgdiv8= document.createElement("div")
+    imgdiv8.setAttribute("class", "imgdiv")
+
+    let imgdiv9= document.createElement("div")
+    imgdiv9.setAttribute("class", "imgdiv")
+
+    let imgdiv10= document.createElement("div")
+    imgdiv10.setAttribute("class", "imgdiv")
+    
+    let productimg1= document.createElement("img")
+    productimg1.setAttribute("src", todaydealsdata[0].mobdiv.image1)
+    productimg1.setAttribute("class","productimg")
+
+    let productimg2= document.createElement("img")
+    productimg2.setAttribute("src", todaydealsdata[0].mobdiv.image2)
+    productimg2.setAttribute("class","productimg" )
+
+    let productimg3= document.createElement("img")
+    productimg3.setAttribute("src", todaydealsdata[0].mobdiv.image3)
+    productimg3.setAttribute("class","productimg" )
+
+    let productimg4= document.createElement("img")
+    productimg4.setAttribute("src", todaydealsdata[0].mobdiv.image4)
+    productimg4.setAttribute("class","productimg" )
+
+    let productimg5= document.createElement("img")
+    productimg5.setAttribute("src", todaydealsdata[0].mobdiv.image5)
+    productimg5.setAttribute("class","productimg" )
+
+    let productimg6= document.createElement("img")
+    productimg6.setAttribute("src", todaydealsdata[0].mobdiv.image6)
+    productimg6.setAttribute("class","productimg" )
+
+    let productimg7= document.createElement("img")
+    productimg7.setAttribute("src", todaydealsdata[0].mobdiv.image7)
+    productimg7.setAttribute("class","productimg")
+
+    let productimg8= document.createElement("img")
+    productimg8.setAttribute("src", todaydealsdata[0].mobdiv.image8)
+    productimg8.setAttribute("class","productimg")
+
+    let productimg9= document.createElement("img")
+    productimg9.setAttribute("src", todaydealsdata[0].mobdiv.image9)
+    productimg9.setAttribute("class","productimg")
+
+    let productimg10= document.createElement("img")
+    productimg10.setAttribute("src", todaydealsdata[0].mobdiv.image10)
+    productimg10.setAttribute("class","productimg")
+
+    imgdiv1.append(productimg1)
+    imgdiv2.append(productimg2)
+    imgdiv3.append(productimg3)
+    imgdiv4.append(productimg4)
+    imgdiv5.append(productimg5)
+    imgdiv6.append(productimg6)
+    imgdiv7.append(productimg7)
+    imgdiv8.append(productimg8)
+    imgdiv9.append(productimg9)
+    imgdiv10.append(productimg10)
+
+    let title1div= document.createElement("div")
+    title1div.setAttribute("class", "title1div")
+
+    let title2div= document.createElement("div")
+    title2div.setAttribute("class", "title1div")
+
+    let title3div= document.createElement("div")
+    title3div.setAttribute("class", "title1div")
+
+    let title4div= document.createElement("div")
+    title4div.setAttribute("class", "title1div")
+
+    let title5div= document.createElement("div")
+    title5div.setAttribute("class", "title1div")
+
+    let title6div= document.createElement("div")
+    title6div.setAttribute("class", "title1div")
+
+    let title7div= document.createElement("div")
+    title7div.setAttribute("class", "title1div")
+
+    let title8div= document.createElement("div")
+    title8div.setAttribute("class", "title1div")
+
+    let title9div= document.createElement("div")
+    title9div.setAttribute("class", "title1div")
+
+    let title10div= document.createElement("div")
+    title10div.setAttribute("class", "title1div")
+
+    let title1= document.createElement("p")
+    title1.setAttribute("class", "title1")
+    title1.innerText= todaydealsdata[0].mobdiv.title1
+
+    let title2= document.createElement("p")
+    title2.setAttribute("class", "title1")
+    title2.innerText= todaydealsdata[0].mobdiv.title3
+
+    let title3= document.createElement("p")
+    title3.setAttribute("class", "title1")
+    title3.innerText= todaydealsdata[0].mobdiv.title5
+    
+
+    let title4= document.createElement("p")
+    title4.setAttribute("class", "title1")
+    title4.innerText= todaydealsdata[0].mobdiv.title7
+
+    let title5= document.createElement("p")
+    title5.setAttribute("class", "title1")
+    title5.innerText= todaydealsdata[0].mobdiv.title9
+
+    let title6= document.createElement("p")
+    title6.setAttribute("class", "title1")
+    title6.innerText= todaydealsdata[0].mobdiv.title11
+
+    let title7= document.createElement("p")
+    title7.setAttribute("class", "title1")
+    title7.innerText= todaydealsdata[0].mobdiv.title13
+
+    let title8= document.createElement("p")
+    title8.setAttribute("class", "title1")
+    title8.innerText= todaydealsdata[0].mobdiv.title15
+
+    let title9= document.createElement("p")
+    title9.setAttribute("class", "title1")
+    title9.innerText= todaydealsdata[0].mobdiv.title17
+
+    let title10= document.createElement("p")
+    title10.setAttribute("class", "title1")
+    title10.innerText= todaydealsdata[0].mobdiv.title19
+
+    let limitedtitle1= document.createElement("p")
+    limitedtitle1.setAttribute("class", "title2")
+    limitedtitle1.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle2= document.createElement("p")
+    limitedtitle2.setAttribute("class", "title2")
+    limitedtitle2.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle3= document.createElement("p")
+    limitedtitle3.setAttribute("class", "title2")
+    limitedtitle3.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle4= document.createElement("p")
+    limitedtitle4.setAttribute("class", "title2")
+    limitedtitle4.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle5= document.createElement("p")
+    limitedtitle5.setAttribute("class", "title2")
+    limitedtitle5.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle6= document.createElement("p")
+    limitedtitle6.setAttribute("class", "title2")
+    limitedtitle6.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle7= document.createElement("p")
+    limitedtitle7.setAttribute("class", "title2")
+    limitedtitle7.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle8= document.createElement("p")
+    limitedtitle8.setAttribute("class", "title2")
+    limitedtitle8.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle9= document.createElement("p")
+    limitedtitle9.setAttribute("class", "title2")
+    limitedtitle9.innerText= todaydealsdata[0].mobdiv.limited
+
+    let limitedtitle10= document.createElement("p")
+    limitedtitle10.setAttribute("class", "title2")
+    limitedtitle10.innerText= todaydealsdata[0].mobdiv.limited
+
+
+    let des1= document.createElement("p")
+    des1.innerText= todaydealsdata[0].mobdiv.title2
+    let des2= document.createElement("p")
+    des2.innerText= todaydealsdata[0].mobdiv.title4
+
+    let des3= document.createElement("p")
+    des3.innerText= todaydealsdata[0].mobdiv.title6
+
+    let des4= document.createElement("p")
+    des4.innerText= todaydealsdata[0].mobdiv.title8
+
+    let des5= document.createElement("p")
+    des5.innerText= todaydealsdata[0].mobdiv.title10
+
+    let des6= document.createElement("p")
+    des6.innerText= todaydealsdata[0].mobdiv.title12
+
+    let des7= document.createElement("p")
+    des7.innerText= todaydealsdata[0].mobdiv.title14
+
+    let des8= document.createElement("p")
+    des8.innerText= todaydealsdata[0].mobdiv.title16
+
+    let des9= document.createElement("p")
+    des9.innerText= todaydealsdata[0].mobdiv.title18
+
+    let des10= document.createElement("p")
+    des10.innerText= todaydealsdata[0].mobdiv.title20
+   
+
+    title1div.append(title1,limitedtitle1)
+    title2div.append(title2,limitedtitle2)
+    title3div.append(title3,limitedtitle3)
+    title4div.append(title4,limitedtitle4)
+    title5div.append(title5,limitedtitle5)
+    title6div.append(title6,limitedtitle6)
+    title7div.append(title7,limitedtitle7)
+    title8div.append(title8,limitedtitle8)
+    title9div.append(title9,limitedtitle9)
+    title10div.append(title10,limitedtitle10)
+
+    product1div.append(imgdiv1, title1div,des1)
+    product2div.append(imgdiv2,title2div, des2)
+    product3div.append(imgdiv3, title3div, des3)
+    product4div.append(imgdiv4, title4div, des4)
+    product5div.append(imgdiv5, title5div, des5)
+    product6div.append(imgdiv6, title6div, des6)
+    product7div.append(imgdiv7, title7div, des7)
+    product8div.append(imgdiv8, title8div, des8)
+    product9div.append(imgdiv9, title9div, des9)
+    product10div.append(imgdiv10, title10div, des10)
+
+
+    document.getElementById("cardcontainer").append( product1div, product2div,product3div, product4div, product5div, product6div, product7div, product8div, product9div, product10div)
+
+
+}
+
+
+
+let  dealsContainer = document.getElementById("cardcontainer")
+
+dealsContainer.addEventListener('wheel', (event) => {
+  event.preventDefault();
+  dealsContainer.scrollLeft += event.deltaY;
+});

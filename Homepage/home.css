@@ -992,7 +992,7 @@ color: #c45500;
 
 /* cardcontainer3 */
 
-.cardcontainer3{
+#cardcontainer3{
   padding: 10px;
   background-color: #E3E6E6;
   gap: 20px;
@@ -1002,6 +1002,51 @@ color: #c45500;
   justify-content: center;
   width: 100%;
   height: 450px;
-  
 
+}  
+
+
+.imgdiv{
+  background-color: #E3E6E6;
+  width: 240px;
+  height: 200px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ 
 }
+
+
+#headingsec{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.title1div{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  gap: 20px;
+}
+
+.title1{
+  background-color: red;
+  color: white;
+  padding: 8px;
+  
+  
+  
+}
+
+.title2{
+ color: red;
+  
+}
+
+
