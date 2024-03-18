@@ -799,9 +799,6 @@ input[type="radio"]:checked {
 
 }
 
-body{
-  background-color: #E3E6E6;
-}
 .cardcontainer {
   background-color: #E3E6E6;
   padding: 10px;
@@ -994,59 +991,146 @@ color: #c45500;
 
 #cardcontainer3{
   padding: 10px;
-  background-color: #E3E6E6;
   gap: 20px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 450px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
 
 }  
 
 
 .imgdiv{
-  background-color: #E3E6E6;
+  background-color: #FFFFFF;
   width: 240px;
   height: 200px;
   display: flex;
  justify-content: center;
  align-items: center;
  padding: 10px;
+ box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
  
 }
 
 
 #headingsec{
-  width: 100%;
-  height: 100px;
+  width: 920px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  
 }
 
+#headingsec h2{
+  font-size: 21px;
+  color: #0f1111;
+}
 
 .title1div{
   display: flex;
   flex-direction: row;
   align-items:center;
-  gap: 20px;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .title1{
-  background-color: red;
+  background-color: #CC0C39;
   color: white;
-  padding: 8px;
-  
-  
+  padding: 4px 8px;
+  text-wrap: nowrap;
+  font-size: 12px;
+ 
+
   
 }
 
 .title2{
  color: red;
+ text-wrap: nowrap;
+  font-size: 12px;
+ 
+  
+}
+
+#Seeall{
+  width: 94px;
+  height: 35px;
+  padding: 5px;
+}
+
+#Seeall a{
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+
+
+#Seeall a:hover{
+  
+  color: #c45500;
+  text-decoration: underline;
+}
+
+.des1{
+  margin-top: 10px;
+  font-size: 13px;
+  color: #0f1111;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
+}
+
+#cardcontainer3{
+  position: relative;
+}
+#leftslideicon{
+  position: absolute;
+  top: 50%;
+  left: 9%;
+
+  
+}
+
+#leftslideicon i{
+  color: #0f1111;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
+#rightslideicon{
+  position: absolute;
+  top: 50%;
+  right: 10%;
   
 }
 
 
+#rightslideicon i{
+  color: #0f1111;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
+#leftslideicon,
+#rightslideicon {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%,-50%);
+  z-index: 999; 
+}

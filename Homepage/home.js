@@ -1050,32 +1050,42 @@ for(let i= 0; i< todaydealsdata.length; i++){
 
 
     let des1= document.createElement("p")
+    des1.setAttribute("class", "des1")
     des1.innerText= todaydealsdata[0].mobdiv.title2
     let des2= document.createElement("p")
+    des2.setAttribute("class", "des1")
     des2.innerText= todaydealsdata[0].mobdiv.title4
 
     let des3= document.createElement("p")
+    des3.setAttribute("class", "des1")
     des3.innerText= todaydealsdata[0].mobdiv.title6
 
     let des4= document.createElement("p")
+    des4.setAttribute("class", "des1")
     des4.innerText= todaydealsdata[0].mobdiv.title8
 
     let des5= document.createElement("p")
+    des5.setAttribute("class", "des1")
     des5.innerText= todaydealsdata[0].mobdiv.title10
 
     let des6= document.createElement("p")
+    des6.setAttribute("class", "des1")
     des6.innerText= todaydealsdata[0].mobdiv.title12
 
     let des7= document.createElement("p")
+    des7.setAttribute("class", "des1")
     des7.innerText= todaydealsdata[0].mobdiv.title14
 
     let des8= document.createElement("p")
+    des8.setAttribute("class", "des1")
     des8.innerText= todaydealsdata[0].mobdiv.title16
 
     let des9= document.createElement("p")
+    des9.setAttribute("class", "des1")
     des9.innerText= todaydealsdata[0].mobdiv.title18
 
     let des10= document.createElement("p")
+    des10.setAttribute("class", "des1")
     des10.innerText= todaydealsdata[0].mobdiv.title20
    
 
@@ -1102,16 +1112,43 @@ for(let i= 0; i< todaydealsdata.length; i++){
     product10div.append(imgdiv10, title10div, des10)
 
 
-    document.getElementById("cardcontainer").append( product1div, product2div,product3div, product4div, product5div, product6div, product7div, product8div, product9div, product10div)
+    document.getElementById("cardcontainer3").append( product1div, product2div,product3div, product4div, product5div, product6div, product7div, product8div, product9div, product10div)
 
 
 }
 
 
 
-let  dealsContainer = document.getElementById("cardcontainer")
+// let  dealsContainer = document.getElementById("cardcontainer3")
 
-dealsContainer.addEventListener('wheel', (event) => {
-  event.preventDefault();
-  dealsContainer.scrollLeft += event.deltaY;
+// dealsContainer.addEventListener('wheel', (event) => {
+//   event.preventDefault();
+//   dealsContainer.scrollLeft += event.deltaY;
+// });
+
+
+
+document.getElementById("leftslideicon").addEventListener("click", function() {
+   
+    document.getElementById("cardcontainer3").scrollLeft -= 250; 
 });
+
+
+document.getElementById("rightslideicon").addEventListener("click", function() {
+    
+    document.getElementById("cardcontainer3").scrollLeft += 250; // Adjust the value as needed
+});
+
+function updateIconPosition() {
+    var cardContainerRect = document.getElementById("cardcontainer3").getBoundingClientRect();
+    var leftIcon = document.getElementById("leftslideicon");
+    var rightIcon = document.getElementById("rightslideicon");
+    
+    leftIcon.style.top = cardContainerRect.top + (cardContainerRect.height / 4) + 'px';
+    rightIcon.style.top = cardContainerRect.top + (cardContainerRect.height / 4) + 'px';
+}
+
+updateIconPosition();
+window.addEventListener('scroll', updateIconPosition);
+
+
