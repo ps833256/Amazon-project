@@ -994,7 +994,7 @@ color: #c45500;
   gap: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -1012,13 +1012,11 @@ color: #c45500;
  justify-content: center;
  align-items: center;
  padding: 10px;
- box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 8px 10px -6px rgba(0, 0, 0, 0.1);
  
 }
 
 
-#headingsec{
+.headingsec{
   width: 920px;
   height: 35px;
   display: flex;
@@ -1031,10 +1029,12 @@ color: #c45500;
   
 }
 
-#headingsec h2{
+.headingsec h2{
   font-size: 21px;
   color: #0f1111;
 }
+
+
 
 .title1div{
   display: flex;
@@ -1099,8 +1099,8 @@ color: #c45500;
 }
 #leftslideicon{
   position: absolute;
-  top: 50%;
-  left: 9%;
+  top: 55%;
+  left: 2%;
 
   
 }
@@ -1114,8 +1114,8 @@ color: #c45500;
 
 #rightslideicon{
   position: absolute;
-  top: 50%;
-  right: 10%;
+  top: 55%;
+  right: 2%;
   
 }
 
@@ -1133,4 +1133,330 @@ color: #c45500;
   top: 50%;
   transform: translateY(-50%,-50%);
   z-index: 999; 
+}
+
+.headingsec{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+ .imgdiv{
+      width: 240px;
+      height: 200px;
+      background-color: white;
+      display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     
+  }
+ 
+  
+  #cardcontainer4{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      gap: 20px;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  }
+
+  #seealloffers a{
+    font-size: 14px;
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  
+  #seealloffers a:hover{
+    color: #c45500;
+    text-decoration: underline;
+  }
+
+
+#cardcontainer4{
+  position: relative;
+}
+
+
+#leftslide{
+  position: absolute;
+  top: 55%;
+  left: 1%;
+
+  
+}
+
+#leftslide i{
+  color: #0f1111;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+#rightslide{
+  position: absolute;
+  top: 55%;
+  right: 1%;
+  
+}
+
+
+#rightslide i{
+  color: #0f1111;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+#leftslide,
+#rightslide {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%,-50%);
+  z-index: 1; 
+}
+
+
+/* furniture- card */
+
+
+#offers a{
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+
+
+#offers a:hover{
+  color: #c45500;
+  text-decoration: underline;
+}
+
+
+#cardcontainer5{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+#cardcontainer5{
+  position: relative;
+}
+
+
+#leftarrow{
+  position: absolute;
+  top: 55%;
+  left: 1%;
+
+  
+}
+
+#leftarrow i{
+  color: #0f1111;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+#rightarrow{
+  position: absolute;
+  top: 55%;
+  right: 1%;
+  
+}
+
+
+#rightarrow i{
+  color: #0f1111;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+#leftarrow,
+#rightarrow {
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50%,-50%);
+  z-index: 1; 
+}
+
+/* small bussiness card */
+
+#alloffers a{
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+
+
+#alloffers a:hover{
+  color: #c45500;
+  text-decoration: underline;
+}
+
+
+
+#cardcontainer6{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+#leftoptions{
+  position: absolute;
+  top: 55%;
+  left: 1%;
+ 
+}
+
+#leftoptions i{
+  color: #0f1111;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+#rightoptions{
+  position: absolute;
+  top: 55%;
+  right: 1%;
+  
+}
+
+
+#rightoptions i{
+  color: #0f1111;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+#leftoptions,
+#rightoptions {
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50%,-50%);
+  z-index: 1; 
+}
+
+#rightoptions:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#leftoptions:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#rightarrow:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#leftarrow:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftslideicon:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightslideicon:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightslide:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftslide:hover{
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
