@@ -577,13 +577,13 @@ input[type="radio"]:checked {
   position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 300px;
+  margin-bottom: 250px;
 }
 
 #lefticon {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 10%;
   transform: translate(-50, -50);
 }
@@ -591,7 +591,7 @@ input[type="radio"]:checked {
 #righticon {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 20%;
   right: 10%;
   transform: translate(-50, -50);
 }
@@ -800,7 +800,6 @@ input[type="radio"]:checked {
 }
 
 .cardcontainer {
-  background-color: #E3E6E6;
   padding: 10px;
   gap: 20px;
   display: flex;
@@ -810,7 +809,7 @@ input[type="radio"]:checked {
   width: 100%;
   height: 450px;
   position: absolute;
-  top: 70%;
+  top: 63%;
 }
 
 
@@ -998,8 +997,7 @@ color: #c45500;
   width: 100%;
   height: 300px;
   overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 
 }  
 
@@ -1168,9 +1166,7 @@ color: #c45500;
       width: 100%;
       height: 300px;
       overflow: hidden;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 8px 10px -6px rgba(0, 0, 0, 0.1);
-
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
   }
 
   #seealloffers a{
@@ -1257,8 +1253,7 @@ color: #c45500;
   width: 100%;
   height: 300px;
   overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 
 }
 
@@ -1333,8 +1328,7 @@ color: #c45500;
   width: 100%;
   height: 300px;
   overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 
 }
 
@@ -1459,4 +1453,78 @@ color: #c45500;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* footer-section */
+
+#footer-section1{
+  padding: 10px;
+  margin-top: 60px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content{
+  padding: 10px;
+  width: 100%;
+height: 126px;
+box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+#personalized{
+font-size: 13px;
+text-align: center;
+width: 858px;
+height: 15px;
+margin-top: 10px;
+}
+
+#footersiginbtn{
+width: 898px;
+padding: 10px;
+text-align: center;
+}
+
+#signfooterbtn{
+width: 230px;
+font-size: 12px;
+border-radius: 4px;
+cursor: pointer;
+height: 28px;
+color: #000;
+font-size: 12px;
+line-height: 28px;
+text-align: center;
+font-weight: 700;
+text-decoration: none;
+text-shadow: 0 1px 0 #ffe093;
+background-color: #FFCC4B;
+border: none;
+
+
+}
+
+#newcustomerdiv{
+text-align: center;
+width: 858px;
+height: 15px;
+font-size: 11px;
+}
+
+#newcustomerdiv a{
+cursor: pointer;
+color: #007185;
+text-decoration: none;
+}
+
+#newcustomerdiv a:hover{
+color: #C7511F;;
 }
