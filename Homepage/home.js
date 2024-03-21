@@ -20,6 +20,8 @@ document.getElementById("signindiv").addEventListener("mouseover", function () {
 document.getElementById("signindiv").addEventListener("mouseout", function () {
   document.getElementById("signinhoverdiv").style.display = "none";
   document.getElementById("signinhoverdiv").style.opacity = 0;
+  
+ 
 });
 
 document.getElementById("baricon").addEventListener("click", function () {
