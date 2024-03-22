@@ -71,26 +71,26 @@ let bannerdata = [
   },
 ];
 
-let currentIndex = 0;
+let i = 0;
 function changeImage() {
-  document.getElementById("cont").innerHTML = "";
+  document.getElementById("cont").innerHTML = null
 
-  let img = document.createElement("img");
-  img.src = bannerdata[currentIndex].image;
-  img.setAttribute("width", "100%");
-  img.setAttribute("height", "500px");
-  cont.append(img);
+  let img = document.createElement("img")
+  img.src = bannerdata[i].image
+  img.setAttribute("width", "100%")
+  img.setAttribute("height", "500px")
+  cont.append(img)
 
-  currentIndex = (currentIndex + 1) % bannerdata.length;
+  i = (i + 1) % bannerdata.length
 }
 
-document.getElementById("righticon").addEventListener("click", changeImage);
+document.getElementById("righticon").addEventListener("click", changeImage)
 
-changeImage();
+changeImage()
 
-document.getElementById("lefticon").addEventListener("click", changeImage);
+document.getElementById("lefticon").addEventListener("click", changeImage)
 
-changeImage();
+changeImage()
 
 //card-1 //
 
