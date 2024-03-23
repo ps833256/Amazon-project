@@ -1568,3 +1568,348 @@ function updateoptionsPosition() {
 
 updateoptionsPosition();
 window.addEventListener("scroll", updateoptionsPosition);
+
+
+let shirtdata = {
+  products: [
+    {
+      card1: {
+        image: "https://m.media-amazon.com/images/I/614IHHBjS4L._AC_UL320_.jpg",
+        brand: "KINGDOM OF WHITE",
+        title: "Replay Full Sleeves White Shirt with Regular Collar Casual/Formal Shirt | 100% Cotton Fabric, Full Sleeve, Regular Collar Shirt for Men, Regular Fit",
+        rating: "3.9",
+        badge: "Limited time deal",
+        price: "₹1,177 M.R.P: ₹1,499 (21% off) Save ₹50 with coupon (limited sizes/colours)",
+        category: "Shirt",  
+
+        color: "white"
+      }
+    },
+    {
+      card2: {
+        image: "https://m.media-amazon.com/images/I/51JIlfNvLGL._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men's Regular Fit Shirt",
+        rating: "4",
+        price: "₹1,012 M.R.P: ₹1,199 (16% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "white"
+      }
+    },
+
+    {
+      card3: {
+        image: "https://m.media-amazon.com/images/I/61MMzZFJbWL._AC_UL320_.jpg",
+        brand: "Arrow",
+        title: "Men's Shirt",
+        rating: "4.2",
+        price: "₹1,279 M.R.P: ₹2,199 (42% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "white"
+      }
+    },
+
+    {
+      card4: {
+        image: "https://m.media-amazon.com/images/I/712CQewF59L._AC_UL320_.jpg",
+        brand: "Arrow",
+        title: "Men's Solid White Full Sleeve Slim Fit Cotton Formal Shirt",
+        rating: "4",
+        price: "₹1,139 M.R.P: ₹1,999 (43% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "white"
+      }
+    }, {
+      card5: {
+        image: "https://m.media-amazon.com/images/I/71hfutLZZ7L._AC_UL320_.jpg",
+        brand: "Allen Solly",
+        title: "Men's Slim Fit Shirt",
+        rating: "3.7",
+        price: "₹1,044 M.R.P: ₹1,599 (35% off)FREE Delivery by Amazon More Buying Choices ₹1,039(3 new offers)",
+        category: "Shirt",
+        color: "white"
+      }
+    }, {
+      card6: {
+        image: "https://m.media-amazon.com/images/I/51YWjChA95L._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men's Regular Fit Shirt",
+        rating: "4.1",
+        price: "₹1,067 M.R.P: ₹1,199 (11% off) FREE Delivery by Amazon",
+        color: "white",
+        category: "Shirt"
+      }
+    }, {
+      card7: {
+        image: "https://m.media-amazon.com/images/I/51ystSbVCQL._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men Shirt",
+        rating: "4",
+        price: "₹1,519 M.R.P: ₹1,599 (5% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "black"
+      }
+    }, {
+      card8: {
+        image: "https://m.media-amazon.com/images/I/71-oqCe5qZL._AC_UL320_.jpg",
+        brand: "Arrow",
+        title: "Men's Shirt",
+        rating: "4.2",
+        price: "₹1,249 M.R.P: ₹2,199 (43% off)FREE Delivery by Amazon",
+        badge: "Deal of the Day",
+        category: "Shirt",
+        color: "black"
+      }
+    }, {
+      card9: {
+        image: "https://m.media-amazon.com/images/I/51IXgnpzkFL._AC_UL320_.jpg",
+        brand: "Allen Solly",
+        title: "Men's Regular Fit Shirt",
+        rating: "3.8",
+        price: "₹959 M.R.P: ₹1,599 (40% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "black"
+      }
+    }, {
+      card10: {
+        image: "https://m.media-amazon.com/images/I/51Q+EsI3-sL._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men's Shirt",
+        rating: "5",
+        price: "₹1,029 M.R.P: ₹1,799 (43% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "black"
+      }
+    }, {
+      card11: {
+        image: "https://m.media-amazon.com/images/I/61DC2+8DwML._AC_UL320_.jpg",
+        brand: "Jack & Jones",
+        title: "Men's Slim Fit Casual Shirt",
+        rating: "4.2",
+        price: "₹984 M.R.P: ₹2,299 (57% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "Blue denim"
+      }
+    }, {
+      card12: {
+        image: "https://m.media-amazon.com/images/I/71h-kTg6aSL._AC_UL320_.jpg",
+        brand: "Dennis Lingo",
+        title: "Men's Solid Denim Cotton Slim Fit Full Sleeve Casual Shirt",
+        rating: "4.4",
+        price: "₹449 M.R.P: ₹2,999 (85% off) FREE Delivery over ₹499. Fulfilled by Amazon",
+        category: "Shirt",
+        color: "Blue denim",
+      }
+    }, {
+      card13: {
+        image: "https://m.media-amazon.com/images/I/51onE1Y-5FL._AC_UL320_.jpg",
+        brand: "Jack & Jones",
+        title: "Men's Solid Regular Fit Spread-Collar Casual Shirt",
+        price: "₹1,574 M.R.P: ₹4,499 (65% off)FREE Delivery by Amazon",
+        color: "Blue denim",
+        category: "Shirt"
+      }
+    }, {
+      card14: {
+        image: "https://m.media-amazon.com/images/I/71wZOJvHpOL._AC_UL320_.jpg",
+        brand: "Lee",
+        title: "Men Shirt",
+        price: "₹1,700 M.R.P: ₹3,399 (50% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "Blue denim",
+      }
+    }, {
+      card15: {
+        image: "https://m.media-amazon.com/images/I/61yHbDFfkqL._AC_UL320_.jpg",
+        brand: "Dennis Lingo",
+        title: "Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
+        price: "₹549 M.R.P: ₹1,849 (70% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "Dark maroon",
+      }
+    }, {
+      card16: {
+        image: "https://m.media-amazon.com/images/I/71QCdHMAw0L._AC_UL320_.jpg",
+        brand: "Park Avenue",
+        title: "Men's Shirt",
+        badge: "Deal of the day",
+        price: "₹919 M.R.P: ₹2,099 (56% off) FREE Delivery by Amazon",
+        color: "Dark maroon",
+        category:"Shirt"
+      }
+    }, {
+      card17: {
+        image: "https://m.media-amazon.com/images/I/61z-e2gUkML._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men's Slim Fit 100% Cotton Shirt",
+        price: "₹1,259 M.R.P: ₹1,599 (21% off)FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "3.8",
+        color: "Dark maroon",
+      }
+    }, {
+      card18: {
+        image: "https://m.media-amazon.com/images/I/81wgDboGvbL._AC_UL320_.jpg",
+        brand: "Park Avenue",
+        title: "Men's Pure Cotton Oxford Pattern Slim Fit Semi Cutaway Collar Full Sleeve Formal Shirt",
+        price: "₹1,009 M.R.P: ₹2,299 (56% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        color: "Dark maroon",
+      }
+    }, {
+      card19: {
+        image: "https://m.media-amazon.com/images/I/51PUlZCbnzL._AC_UL320_.jpg",
+        brand: "Dennis Lingo",
+        title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+        price: "₹460 M.R.P: ₹2,299 (80% off) Save 5% with coupon (limited sizes/colours) FREE Delivery over ₹499. Fulfilled by Amazon",
+        category: "Shirt",
+        color: "Dark maroon",
+      }
+    }, {
+      card20: {
+        image: "https://m.media-amazon.com/images/I/614rDqs5UyL._AC_UL320_.jpg",
+        brand: "Dennis Lingo",
+        title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+        price: "₹460 M.R.P: ₹2,299 (80% off) FREE Delivery over ₹499.",
+        category: "Shirt",
+        rating: "3.9",
+        color: "Navy blue",
+      }
+    }, {
+      card21: {
+        image: "https://m.media-amazon.com/images/I/71aFm7jdWbL._AC_UL320_.jpg",
+        brand: "Allen Solly",
+        title: "Men's Shirt",
+        price: "₹1,044 M.R.P: ₹1,599 (35% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "3.9",
+        color: "Navy blue",
+      }
+    }, {
+      card22: {
+        image: "https://m.media-amazon.com/images/I/71kzEGfPyCL._AC_UL320_.jpg",
+        brand: "Van Heusen",
+        title: "Men Shirt",
+        price: "₹1,356 M.R.P: ₹2,299 (41% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "4.1",
+        color: "Navy blue",
+      }
+    }, {
+      card23: {
+        image: "https://m.media-amazon.com/images/I/61G7lgwP2SL._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men's Slim Fit 100% Cotton Shirt",
+        price: "₹959 M.R.P: ₹1,599 (40% off) FREE Delivery by Amazon",
+        rating: "3.8",
+        category: "Shirt",
+        color: "Navy blue"
+      }
+    }, {
+      card24: {
+        image: "https://m.media-amazon.com/images/I/618B4LhlUxL._AC_UL320_.jpg",
+        brand: "Pepe Jeans",
+        title: "Men's Regular Fit Shirt",
+        price: "₹1,009 M.R.P: ₹2,199 (54% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "4.1",
+        color: "Navy blue",
+      }
+    }, {
+      card25: {
+        image: "https://m.media-amazon.com/images/I/71QZ41xermL._AC_UL320_.jpg",
+        brand: "Allen Solly",
+        title: "Men's Shirt",
+        price: "₹1,044 M.R.P: ₹1,599 (35% off) FREE Delivery by Amazon",
+        rating: "3.9",
+        category: "Shirt",
+        color: "Sky blue",
+      }
+    }, {
+      card26: {
+        image: "https://m.media-amazon.com/images/I/61Hq5zUBWEL._AC_UL320_.jpg",
+        brand: "Arrow",
+        title: "Solid Manhattan Slim Fit Shirt",
+        price: "₹1,319 M.R.P: ₹2,199 (40% off) FREE Delivery by Amazon",
+        rating: "5",
+        category: "Shirt",
+        color: "Sky blue",
+      }
+    }, {
+      card27: {
+        image: "https://m.media-amazon.com/images/I/61yEm9ZddgL._AC_UL320_.jpg",
+        brand: "Cantabil",
+        title: "Cotton Blend Self Design Full Sleeve Regular Fit Formal Shirt for Men with Pocket | Formal Shirt for Men | Formal Wear Shirts for Men",
+        price: "₹878 M.R.P: ₹2,199 (60% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "5",
+        color: "Sky blue",
+      }
+    }, {
+      card28: {
+        image: "https://m.media-amazon.com/images/I/61aGsNUU3sL._AC_UL320_.jpg",
+        brand: "Peter England",
+        title: "Men's Shirt",
+        price: "₹840 M.R.P: ₹1,199 (30% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "3.8",
+        color: "Sky blue",
+      }
+    }, {
+      card29: {
+        image: "https://m.media-amazon.com/images/I/61GF+DnTfIL._AC_UL320_.jpg",
+        brand: "Allen Cooper",
+        title: "Solid Casual Shirts for Men",
+        price: "₹919 M.R.P: ₹2,999 (69% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "3.6",
+        color: "Sky blue",
+      }
+    }, {
+      card30: {
+        image: "https://m.media-amazon.com/images/I/61vOh+WsVpL._AC_UL320_.jpg",
+        brand: "Van Heusen",
+        title: "Men's Slim Fit Formal Shirt",
+        price: "₹1,179 M.R.P: ₹1,999 (41% off) FREE Delivery by Amazon",
+        category: "Shirt",
+        rating: "3.9",
+        color: "Sky blue",
+      }
+    }
+
+  ]
+};
+
+
+
+
+
+
+
+
+document.getElementById("searchicon").addEventListener("click", function(){
+
+  let searchval= document.getElementById("search").value
+
+  let searchdata=[]
+  let flag= false;
+
+  for (let i = 0; i < shirtdata.products.length; i++) {
+    const card = shirtdata.products[i];
+    for (let key in card) {
+        if(searchval===card[key].category){
+          flag= true;
+          searchdata.push(card[key].category)
+          break;
+        }
+    }
+  }
+
+  if(flag){
+    let seacrhpage= document.createElement("a")
+    seacrhpage.setAttribute("href", "../Homepage/search.html")
+    seacrhpage.click()
+
+  }
+
+})
