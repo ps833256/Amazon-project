@@ -1,13 +1,1953 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #navbarcont {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+      background-color: #131921;
+      justify-content: space-evenly;
+    }
+
+    #logodiv {
+      cursor: pointer;
+      height: 30px;
+      padding: 1px 8px 1px 6px;
+      margin: 1px;
+    }
+
+    #logo {
+      height: 30px;
+      padding: 1px 8px 1px 6px;
+      margin: 1px;
+      object-fit: contain;
+    }
+
+    #deliveringdiv {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px;
+    }
+
+    #location {
+      color: white;
+    }
+
+    #locationdiv {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #locationdiv i {
+      color: #d6d6d6;
+      font-size: 14px;
+      line-height: 39px;
+      text-align: start;
+    }
+
+    #locationdiv {
+      height: 35px;
+      gap: 2px;
+    }
+
+    #deliverto {
+      font-size: 12px;
+      color: #cccccc;
+      line-height: 14px;
+      text-align: start;
+    }
+
+    #update {
+      font-weight: 700;
+      font-size: 14px;
+      text-align: start;
+      color: #ffffff;
+      line-height: 15px;
+    }
+
+    #searchbarcont {
+      width: 45%;
+      height: 60px;
+      padding: 8px;
+      text-wrap: nowrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #searchbarcont select {
+      cursor: pointer;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      width: 10%;
+      padding: 10px 4px 10px 3px;
+      font-size: 14px;
+      text-align: start;
+      border: none;
+      background-color: #e6e6e6;
+    }
+
+    #search {
+      outline: 0;
+      border: none;
+      padding: 10px 4px 9px 3px;
+      font-size: 15px;
+      text-align: start;
+      width: 80%;
+      padding-left: 10px;
+    }
+
+    #searchicon {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      height: 42px;
+      background-color: #f3a847;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+    }
+
+    #searchicon i {
+      font-size: 20px;
+      text-align: center;
+      line-height: 1px;
+      color: #131921;
+    }
+
+    #searchbarcont:focus {
+      border: 1px solid #f3a847;
+    }
+
+    #logodiv:hover {
+      border: 1px solid white;
+      cursor: pointer;
+    }
+
+    #deliveringdiv:hover {
+      border: 1px solid white;
+      cursor: pointer;
+    }
+
+    #searchbarcont select:hover {
+      cursor: pointer;
+      background-color: #ccc6c6;
+    }
+
+    #searchicon:hover {
+      cursor: pointer;
+      background-color: #e48a0c;
+    }
+
+    #lanselectdiv {
+      height: 50px;
+      padding: 8px;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    #lang {
+      border: none;
+      background-color: #131921;
+      color: #ccc6c6;
+      font-size: 14px;
+      text-align: start;
+      line-height: 15px;
+    }
+
+    #flag {
+      height: 26px;
+      margin-bottom: 1px;
+      margin-right: 2px;
+    }
+
+    #signindiv {
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+    }
+
+    #hello {
+      color: #ccc6c6;
+      font-size: 12px;
+      text-align: start;
+      line-height: 14px;
+    }
+
+    #account {
+      background-color: #131921;
+      color: #ccc6c6;
+      font-size: 14px;
+      text-align: start;
+      line-height: 14px;
+      border: none;
+      font-weight: 700;
+    }
+
+    #signindiv:hover {
+      cursor: pointer;
+      border: 1px solid #ccc6c6;
+    }
+
+    #lanselectdiv:hover {
+      cursor: pointer;
+      border: 1px solid #ccc6c6;
+    }
+
+    #returndiv {
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #returns {
+      color: #ccc6c6;
+      font-size: 12px;
+      text-align: start;
+      line-height: 14px;
+    }
+
+    #orders {
+      background-color: #131921;
+      color: #ccc6c6;
+      font-size: 14px;
+      text-align: start;
+      line-height: 14px;
+      font-weight: 700;
+    }
+
+    #cartdiv {
+      height: 50px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #cartdiv i {
+      font-size: 24px;
+      color: #ccc6c6;
+      text-align: start;
+    }
+
+    #cartdiv p {
+      font-size: 14px;
+      color: #ccc6c6;
+      text-align: start;
+      font-weight: 700;
+      align-self: flex-end;
+    }
+
+    #returndiv:hover {
+      cursor: pointer;
+      border: 1px solid #ccc6c6;
+    }
+
+    #cartdiv:hover {
+      cursor: pointer;
+      border: 1px solid #ccc6c6;
+    }
+
+    #lanselectdiv {
+      position: relative;
+    }
+
+    #langhoverdiv {
+      z-index: 1;
+      background-color: white;
+      display: none;
+      position: absolute;
+      left: 0%;
+      top: 110%;
+      padding: 10px;
+      border-radius: 7px;
+      border: 0.5px solid #ccc6c6;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    #langmaindiv {
+      text-wrap: nowrap;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .options {
+      font-weight: 400;
+      font-size: 12px;
+      margin-right: 50px;
+      margin-top: 7px;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 7px;
+    }
+
+    #youareshopping {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+      gap: 5px;
+    }
+
+    #inflag {
+      height: 26px;
+    }
+
+    #youareshopping p {
+      font-size: 12px;
+      text-wrap: nowrap;
+    }
+
+    #learnmore a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #3578bc;
+    }
+
+    #learnmore {
+      margin-top: 7px;
+      padding-left: 30px;
+    }
+
+    #region {
+      margin-top: 7px;
+      padding-left: 30px;
+    }
+
+    #region a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #3578bc;
+    }
+
+    .options:hover {
+      color: #c45500;
+      text-decoration: underline;
+    }
+
+    #learnmore a:hover {
+      color: #c45500;
+      text-decoration: underline;
+    }
+
+    #region a:hover {
+      color: #c45500;
+      text-decoration: underline;
+    }
+
+    input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      padding: 6px;
+      background-clip: content-box;
+      border: 2px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+    }
+
+    input[type="radio"]:checked {
+      background-color: #c45500;
+    }
+
+    #option1 {
+      font-size: 12px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      height: 40px;
+      border-bottom: 0.1px solid #ccc6c6;
+    }
+
+    #signindiv {
+      position: relative;
+    }
+
+
+
+    #signinhoverdiv {
+      z-index: 1;
+      background-color: white;
+      display: none;
+      width: 450%;
+      position: absolute;
+      left: -250%;
+      top: 110%;
+      padding: 10px;
+      border-radius: 7px;
+      border: 0.5px solid #ccc6c6;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    #signinhoverbtndiv {
+      border-bottom: 0.00001px solid #ccc6c6;
+      text-wrap: nowrap;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #afterhoverbtn {
+      border: none;
+      background-color: #ffd814;
+      padding: 10px 100px 10px 100px;
+      cursor: pointer;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    #newcustomer {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    #afterhoverbtn:hover {
+      text-decoration: underline;
+    }
+
+    #newcustomer p {
+      font-size: 12px;
+    }
+
+    #newcustomer a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #3578bc;
+    }
+
+    #newcustomer a:hover {
+      color: #c45500;
+      text-decoration: underline;
+    }
+
+    #yourlistdiv {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+      padding: 5px;
+    }
+
+    #yourlistdiv p {
+      font-size: 16px;
+      color: #0f1111;
+      font-weight: 700;
+    }
+
+    #youraccountdiv p {
+      font-size: 16px;
+      text-align: start;
+      color: #0f1111;
+      font-weight: 700;
+    }
+
+    #youraccountdiv {
+      width: 50%;
+      padding: 5px;
+      border-left: 0.0001px solid #ccc6c6;
+    }
+
+    #secondsectioncontainer {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+
+    #youraccountdiv a {
+      color: #444444;
+      font-size: 13px;
+      text-align: start;
+      line-height: 16px;
+      text-decoration: none;
+    }
+
+    #yourlistdiv a {
+      text-wrap: nowrap;
+      color: #444444;
+      font-size: 13px;
+      text-align: start;
+      line-height: 16px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      z-index: 101;
+    }
+
+    .backdrop {
+      margin-top: 4%;
+      background-color: rgba(0, 0, 0, 0.884);
+      opacity: 0.5;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      display: none;
+    }
+
+    .dropdown:hover>.backdrop {
+      display: block;
+    }
+
+    #signinhoverdiv:hover~.backdrop {
+      display: none;
+    }
+
+    #yourlistdiv a:hover {
+      color: #c45500;
+      text-decoration: underline;
+    }
+
+    #youraccountdiv a:hover {
+      color: #c45500;
+      text-decoration: underline;
+    }
+
+    #navbar2cont {
+      width: 100%;
+      background-color: #232f3e;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #allicon {
+      font-weight: 700;
+      color: white;
+      gap: 10px;
+      text-align: start;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      height: 40px;
+      padding: 7px 8px 7px 8px;
+    }
+
+    #allicon i {
+      color: white;
+      font-size: 25px;
+    }
+
+    #menuoptions a {
+      text-decoration: none;
+      color: white;
+      margin-right: 10px;
+    }
+
+    #menuoptions a:hover {
+      border: 1px solid #cccccc;
+    }
+
+    #allicon i:hover {
+      border: 1px solid #cccccc;
+    }
+
+    #allicon p:hover {
+      border: 1px solid #cccccc;
+    }
+
+    #mainsectioncontainer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 250px;
+    }
+
+
+    #mainsectioncontainer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 250px;
+    }
+
+    #lefticon {
+      cursor: pointer;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      transform: translate(-50, -50);
+    }
+
+    #righticon {
+      cursor: pointer;
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      transform: translate(-50, -50);
+    }
+
+    #lefticon i {
+      font-size: 40px;
+      color: white;
+    }
+
+    #righticon i {
+      font-size: 40px;
+      color: white;
+    }
+
+    #bckgroundimg {
+      width: 100%;
+      height: auto;
+    }
+
+    #heroimg {
+      width: 100%;
+      height: auto;
+    }
+
+    #allicon {
+      position: relative;
+      cursor: pointer;
+    }
+
+    #allhoverdiv {
+      width: 300px;
+      z-index: 1;
+      display: none;
+      position: absolute;
+      top: -160%;
+      left: -5%;
+      flex-direction: column;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    #hellosignnav {
+      padding-left: 30px;
+      height: 55px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #232f3e;
+      width: 120%;
+      cursor: pointer;
+    }
+
+    #crossicon {
+      text-align: end;
+    }
+
+    #hellofirstsec {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #profilesignin {
+      text-wrap: nowrap;
+      font-size: 19px;
+      white-space: nowrap;
+      line-height: 25px;
+      font-weight: 700;
+    }
+
+    #hellosignnav i {
+      height: 25px;
+      width: 27px;
+      margin: 0 10px 0 36px;
+    }
+
+    #trendingmenuoptionscont {
+      padding-left: 60px;
+      width: 120%;
+      color: #0f1111;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      overflow: scroll;
+      height: 100vh;
+    }
+
+    #trendingmenuoptionscont p {
+      margin-top: 20px;
+      padding-left: 20px;
+      font-size: 12px;
+    }
+
+    .headings {
+      margin-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #111;
+    }
+
+    .borders {
+      margin-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      width: 100%;
+      border-bottom: 0.00001px solid #ccc6c6;
+    }
+
+    #allhoverdiv {
+      animation-name: example;
+      animation-duration: 1s;
+    }
+
+    @keyframes example {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    #cont {
+      width: 80%;
+      height: auto;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    #cont p{
+      display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    }
+
+    .carddiv {
+      box-shadow: inset 1px 2px rgba(0, 0, 0, 0.01),
+        0 2px 4px rgba(0, 0, 0, 0.01),
+        0 4px 8px rgba(0, 0, 0, 0.01),
+        0 8px 16px rgba(0, 0, 0, 0.01),
+        0 16px 32px rgba(0, 0, 0, 0.01),
+        0 32px 64px rgba(0, 0, 0, 0.01);
+      padding: 10px;
+      width: 250px;
+      height: 600px;
+      /* border: 1px solid red; */
+      margin-top: 20px;
+    }
+
+
+    .imgdiv {
+      width: 90%;
+      height: 330px;
+      margin: auto;
+    }
+
+    .productimg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .brand {
+      font-size: 18px;
+      margin-top: 10px;
+      text-align: center;
+      color: #0f1111;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+      color: #0f1111;
+
+    }
+
+    .price {
+      font-size: 22px;
+      margin-top: 10px;
+      text-align: center;
+      color: #0f1111;
+    }
+
+    .rating {
+      margin-top: 10px;
+      text-align: center;
+      color: #0f1111;
+
+    }
+
+    .delivery {
+      margin-top: 10px;
+      text-align: center;
+      color: #0f1111;
+
+    }
+
+    .deal {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      width: 50%;
+      height: 26px;
+      text-align: center;
+      color: white;
+      background-color: #B12704;
+    }
+
+    #filterscontainer{
+      border: 1px solid black;
+      width: 20%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 12px;
+    }
+
+    #filter1{
+      border: 1px solid red;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #filter1 p{
+      line-height: 16px;
+      font-size: 14px;
+      color: #0f1111;
+      font-weight: 700;
+    }
+
+    #desktopdiv{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    #shirt{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+    }
+  </style>
+
+
 </head>
+
 <body>
+
+  <div id="navbarcont">
+    <div id="logodiv">
+      <img src="Amazonlogo.png" alt="" id="logo" />
+    </div>
+
+    <div id="deliveringdiv">
+      <div>
+        <i class="fa-solid fa-location-dot" id="location"></i>
+      </div>
+
+      <div id="locationdiv">
+        <div>
+          <p id="deliverto">Delivering to Delhi 110008</p>
+        </div>
+
+        <div>
+          <p id="update">Update location</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="searchbarcont">
+      <select name="" id="">
+        <option value="All">All</option>
+      </select>
+
+      <input type="search" placeholder="Search Amazon.in" id="search" />
+
+      <div id="searchicon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div id="lanselectdiv" class="dropdown">
+      <img src="64.png" alt="" id="flag" />
+      <select name="" id="lang">
+        <option value="English">EN</option>
+      </select>
+
+      <div id="langhoverdiv">
+        <div id="langmaindiv">
+          <div id="option1">
+            <input type="radio" id="english" name="Language" value="english" />
+            <label for="english">English-EN</label>
+          </div>
+          <div class="options">
+            <input type="radio" id="hindi" name="Language" value="hindi" />
+            <label for="Hindi">हिन्दी - HI </label>
+          </div>
+
+          <div class="options">
+            <input type="radio" id="TA" name="Language" value="TA" />
+            <label for="TA">தமிழ் - TA </label>
+          </div>
+          <div class="options">
+            <input type="radio" id="TE" name="Language" value="TE" />
+            <label for="TE">తెలుగు - TE</label>
+          </div>
+
+          <div class="options">
+            <input type="radio" id="KN" name="Language" value="KN" />
+            <label for="KN">ಕನ್ನಡ - KN</label>
+          </div>
+          <div class="options">
+            <input type="radio" id="ML" name="Language" value="ML" />
+            <label for="ML">മലയാളം - ML </label>
+          </div>
+
+          <div class="options">
+            <input type="radio" id="BN" name="Language" value="BN" />
+            <label for="BN"> বাংলা - BN</label>
+          </div>
+
+          <div class="options">
+            <input type="radio" id="MR" name="Language" value="MR" />
+            <label for="MR"> मराठी - MR</label>
+          </div>
+        </div>
+
+        <div id="learnmore">
+          <a href="#">Learn More</a>
+        </div>
+
+        <div id="youareshopping">
+          <img src="64.png" alt="" id="inflag" />
+          <p>You are shopping on Amazon.in</p>
+        </div>
+
+        <div id="region">
+          <a href="#" id="Region">Country/Region</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="signindiv" class="dropdown">
+      <div class="dropbtn">
+        <p id="hello">Hello, sign in</p>
+        <p id="account">Account & Lists</p>
+      </div>
+
+      <div class="backdrop"></div>
+
+      <div id="signinhoverdiv">
+        <div id="signinhoverbtndiv">
+          <a href="../Authentication/Login/login.html">
+            <button id="afterhoverbtn">Sign in</button>
+          </a>
+
+          <div id="newcustomer">
+            <p>New customer?</p>
+            <a href="#">Start here.</a>
+          </div>
+        </div>
+
+        <div id="secondsectioncontainer">
+          <div id="yourlistdiv">
+            <p>Your Lists</p>
+            <a href="#">Create a Wish List</a>
+            <a href="#">Wish from Any Website</a>
+            <a href="#">Baby Wishlist</a>
+            <a href="#">Discover Your Style</a>
+            <a href="#">Explore Showroom</a>
+          </div>
+
+          <div id="youraccountdiv">
+            <p>Your Account</p>
+            <a href="#">Your Account</a><br />
+            <a href="#">Your Orders</a><br />
+            <a href="#">Your Wish List</a><br />
+            <a href="#">Your Recommendations</a><br />
+            <a href="#">Your Prime Membership</a><br />
+            <a href="#">Your Prime Video</a><br />
+            <a href="#">Your Subscribe & Save Items</a><br />
+            <a href="#">Memberships & Subscriptions</a><br />
+            <a href="#">Your Seller Account</a><br />
+            <a href="#">Manage Your Content and Devices</a><br />
+            <a href="#">Your Free Amazon Business Account</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="returndiv">
+      <p id="returns">Returns</p>
+      <p id="orders">& Orders</p>
+    </div>
+
+    <div id="cartdiv">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p>Cart</p>
+    </div>
+  </div>
+
+
+  <!-- Navbar-2 -->
+
+  <div id="navbar2cont">
+    <div id="allicon">
+      <i class="fa-solid fa-bars" id="baricon"></i>
+      <p>ALL</p>
+      <div id="menuoptions">
+        <a href="#">Fresh</a>
+        <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">Amazon miniTV</a>
+        <a href="#">Sell</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Electronics</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Prime</a>
+      </div>
+
+      <div id="amzonminitv">
+        <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">
+          <img src="mini tv.jpg" alt="" />
+        </a>
+      </div>
+
+      <div id="allhoverdiv">
+        <div id="hellosignnav">
+          <div id="hellofirstsec">
+            <i class="fa-solid fa-user"></i>
+            <p id="profilesignin">Hello, Sign in</p>
+          </div>
+          <div id="crossicon">
+            <i class="fa-solid fa-xmark" id="Crossicon"></i>
+          </div>
+        </div>
+
+        <div id="trendingmenuoptionscont">
+          <h4 class="headings">Trending</h4>
+          <p>Best Sellers</p>
+          <p>New Releases</p>
+          <h5 class="borders">Movers and Shakers</h5>
+          <h4 class="headings">Digital Content and Devices</h4>
+          <p>Echo & Alexa</p>
+          <p>Fire TV</p>
+          <p>Kindle E-Readers & eBooks</p>
+          <p>Audible Audiobooks</p>
+          <p>Amazon Prime Video</p>
+          <h5 class="borders">Amazon Prime Music</h5>
+          <h4 class="headings">Shop by Category</h4>
+          <p>Mobiles, Computers</p>
+          <p>TV, Appliances, Electronics</p>
+          <p>Men's Fashion</p>
+          <p>Women's Fashion</p>
+          <h5 class="borders">See all</h5>
+          <h4 class="headings">Programs & Features</h4>
+          <p>Amazon Pay</p>
+          <p>Gift Cards & Mobile Recharges</p>
+          <p>Amazon Launchpad</p>
+          <p>Handloom and Handicrafts</p>
+          <h5 class="borders">See all</h5>
+          <h4 class="headings">Help & Settings</h4>
+          <p>Your Account</p>
+          <p>Customer Service</p>
+          <h5 class="borders">Sign</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="desktopdiv">
+    <div id="filterscontainer">
+    
+      <div id="filter1">
+        <p>Category</p>
+        <div  id="shirt">
+          <label>
+            <input type="checkbox" value="shirt" name="shirt">
+            Shirts for men
+        </label>
+        </div>
+        
+      </div>
     
 
-    <h1>Search Page </h1>
+      
+    </div>
+  
+    <div id="cont">
+  
+    </div>
+
+  </div>
+
+ 
+
+
+
+
+
 </body>
+<script>
+
+  document
+    .getElementById("lanselectdiv")
+    .addEventListener("mouseover", function () {
+      document.getElementById("langhoverdiv").style.display = "block";
+      document.getElementById("langhoverdiv").style.opacity = 1;
+    });
+
+  document
+    .getElementById("lanselectdiv")
+    .addEventListener("mouseout", function () {
+      document.getElementById("langhoverdiv").style.display = "none";
+      document.getElementById("langhoverdiv").style.opacity = 0;
+    });
+
+  document.getElementById("signindiv").addEventListener("mouseover", function () {
+    document.getElementById("signinhoverdiv").style.display = "block";
+    document.getElementById("signinhoverdiv").style.opacity = 1;
+  });
+
+  document.getElementById("signindiv").addEventListener("mouseout", function () {
+    document.getElementById("signinhoverdiv").style.display = "none";
+    document.getElementById("signinhoverdiv").style.opacity = 0;
+
+
+  });
+
+  document.getElementById("baricon").addEventListener("click", function () {
+    document.getElementById("allhoverdiv").style.display = "block";
+  });
+
+  document
+    .getElementById("crossicon")
+    .addEventListener("click", function (event) {
+      event.stopPropagation();
+
+      document.getElementById("allhoverdiv").style.display = "none";
+    });
+
+  let shirtdata = {
+    products: [
+      {
+        card1: {
+          image: "https://m.media-amazon.com/images/I/614IHHBjS4L._AC_UL320_.jpg",
+          brand: "KINGDOM OF WHITE",
+          title: "Replay Full Sleeves White Shirt with Regular Collar Casual/Formal Shirt | 100% Cotton Fabric, Full Sleeve, Regular Collar Shirt for Men, Regular Fit",
+          rating: "3.9",
+          badge: "Limited time deal",
+          price: "1,177",
+          delivery: "FREE Delivery by Amazon",
+          category: "Shirt",
+          color: "white"
+        }
+      },
+      {
+        card2: {
+          image: "https://m.media-amazon.com/images/I/51JIlfNvLGL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Regular Fit Shirt",
+          rating: "4",
+          price: "1,012",
+          delivery: "FREE Delivery by Amazon",
+          category: "Shirt",
+          color: "white"
+        }
+      },
+
+      {
+        card3: {
+          image: "https://m.media-amazon.com/images/I/61MMzZFJbWL._AC_UL320_.jpg",
+          brand: "Arrow",
+          title: "Men's Shirt",
+          rating: "4.2",
+          price: "1,279",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "white"
+        }
+      },
+
+      {
+        card4: {
+          image: "https://m.media-amazon.com/images/I/712CQewF59L._AC_UL320_.jpg",
+          brand: "Arrow",
+          title: "Men's Solid White Full Sleeve Slim Fit Cotton Formal Shirt",
+          rating: "4",
+          price: "1,139",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "white"
+        }
+      }, {
+        card5: {
+          image: "https://m.media-amazon.com/images/I/71hfutLZZ7L._AC_UL320_.jpg",
+          brand: "Allen Solly",
+          title: "Men's Slim Fit Shirt",
+          rating: "3.7",
+          price: "1,044",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "white"
+        }
+      }, {
+        card6: {
+          image: "https://m.media-amazon.com/images/I/51YWjChA95L._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Regular Fit Shirt",
+          rating: "4.1",
+          price: "1,067",
+          delivery: "FREE Delivery by Amazon",
+          color: "white"
+        }
+      }, {
+        card7: {
+          image: "https://m.media-amazon.com/images/I/51ystSbVCQL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men Shirt",
+          rating: "4",
+          price: "1,519",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "black"
+        }
+      }, {
+        card8: {
+          image: "https://m.media-amazon.com/images/I/71-oqCe5qZL._AC_UL320_.jpg",
+          brand: "Arrow",
+          title: "Men's Shirt",
+          rating: "4.2",
+          price: "1,249",
+          delivery: "FREE Delivery by Amazon",
+          badge: "Deal of the Day",
+          cateogry: "Shirt",
+          color: "black"
+        }
+      }, {
+        card9: {
+          image: "https://m.media-amazon.com/images/I/51IXgnpzkFL._AC_UL320_.jpg",
+          brand: "Allen Solly",
+          title: "Men's Regular Fit Shirt",
+          rating: "3.8",
+          price: "959",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "black"
+        }
+      }, {
+        card10: {
+          image: "https://m.media-amazon.com/images/I/51Q+EsI3-sL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Shirt",
+          rating: "5",
+          price: "1,029",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "black"
+        }
+      }, {
+        card11: {
+          image: "https://m.media-amazon.com/images/I/61DC2+8DwML._AC_UL320_.jpg",
+          brand: "Jack & Jones",
+          title: "Men's Slim Fit Casual Shirt",
+          rating: "4.2",
+          price: "984",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "Blue denim"
+        }
+      }, {
+        card12: {
+          image: "https://m.media-amazon.com/images/I/71h-kTg6aSL._AC_UL320_.jpg",
+          brand: "Dennis Lingo",
+          title: "Men's Solid Denim Cotton Slim Fit Full Sleeve Casual Shirt",
+          rating: "4.4",
+          price: "449",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "Blue denim",
+        }
+      }, {
+        card13: {
+          image: "https://m.media-amazon.com/images/I/51onE1Y-5FL._AC_UL320_.jpg",
+          brand: "Jack & Jones",
+          title: "Men's Solid Regular Fit Spread-Collar Casual Shirt",
+          price: "1,574",
+          delivery: "FREE Delivery by Amazon",
+          color: "Blue denim",
+          rating: "4"
+        }
+      }, {
+        card14: {
+          image: "https://m.media-amazon.com/images/I/71wZOJvHpOL._AC_UL320_.jpg",
+          brand: "Lee",
+          title: "Men Shirt",
+          price: "1,700",
+          cateogry: "Shirt",
+          delivery: "FREE Delivery by Amazon",
+          color: "Blue denim",
+          rating: "4"
+        }
+      }, {
+        card15: {
+          image: "https://m.media-amazon.com/images/I/61yHbDFfkqL._AC_UL320_.jpg",
+          brand: "Dennis Lingo",
+          title: "Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
+          price: "549",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "Dark maroon",
+          rating: "4.2"
+        }
+      }, {
+        card16: {
+          image: "https://m.media-amazon.com/images/I/71QCdHMAw0L._AC_UL320_.jpg",
+          brand: "Park Avenue",
+          title: "Men's Shirt",
+          badge: "Deal of the day",
+          price: "919",
+          delivery: "FREE Delivery by Amazon",
+          color: "Dark maroon",
+          rating: "4.3"
+        }
+      }, {
+        card17: {
+          image: "https://m.media-amazon.com/images/I/61z-e2gUkML._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Slim Fit 100% Cotton Shirt",
+          price: "1,259",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "3.8",
+          color: "Dark maroon",
+        }
+      }, {
+        card18: {
+          image: "https://m.media-amazon.com/images/I/81wgDboGvbL._AC_UL320_.jpg",
+          brand: "Park Avenue",
+          title: "Men's Pure Cotton Oxford Pattern Slim Fit Semi Cutaway Collar Full Sleeve Formal Shirt",
+          price: "1,009",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "Dark maroon",
+          rating: "4"
+        }
+      }, {
+        card19: {
+          image: "https://m.media-amazon.com/images/I/51PUlZCbnzL._AC_UL320_.jpg",
+          brand: "Dennis Lingo",
+          title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+          price: "460",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          color: "Dark maroon",
+          rating: "4.1"
+        }
+      }, {
+        card20: {
+          image: "https://m.media-amazon.com/images/I/614rDqs5UyL._AC_UL320_.jpg",
+          brand: "Dennis Lingo",
+          title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+          price: "460",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "3.9",
+          color: "Navy blue",
+        }
+      }, {
+        card21: {
+          image: "https://m.media-amazon.com/images/I/71aFm7jdWbL._AC_UL320_.jpg",
+          brand: "Allen Solly",
+          title: "Men's Shirt",
+          price: "1,044",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "3.9",
+          color: "Navy blue",
+        }
+      }, {
+        card22: {
+          image: "https://m.media-amazon.com/images/I/71kzEGfPyCL._AC_UL320_.jpg",
+          brand: "Van Heusen",
+          title: "Men Shirt",
+          price: "1,356",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "4.1",
+          color: "Navy blue",
+        }
+      }, {
+        card23: {
+          image: "https://m.media-amazon.com/images/I/61G7lgwP2SL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Slim Fit 100% Cotton Shirt",
+          price: "959",
+          delivery: "FREE Delivery by Amazon",
+          rating: "3.8",
+          cateogry: "Shirt",
+          color: "Navy blue"
+        }
+      }, {
+        card24: {
+          image: "https://m.media-amazon.com/images/I/618B4LhlUxL._AC_UL320_.jpg",
+          brand: "Pepe Jeans",
+          title: "Men's Regular Fit Shirt",
+          price: "1,009",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "4.1",
+          color: "Navy blue",
+        }
+      }, {
+        card25: {
+          image: "https://m.media-amazon.com/images/I/71QZ41xermL._AC_UL320_.jpg",
+          brand: "Allen Solly",
+          title: "Men's Shirt",
+          price: "1,044",
+          delivery: "FREE Delivery by Amazon",
+          rating: "3.9",
+          cateogry: "Shirt",
+          color: "Sky blue",
+        }
+      }, {
+        card26: {
+          image: "https://m.media-amazon.com/images/I/61Hq5zUBWEL._AC_UL320_.jpg",
+          brand: "Arrow",
+          title: "Solid Manhattan Slim Fit Shirt",
+          price: "1,319",
+          delivery: "FREE Delivery by Amazon",
+          rating: "5",
+          cateogry: "Shirt",
+          color: "Sky blue",
+        }
+      }, {
+        card27: {
+          image: "https://m.media-amazon.com/images/I/61yEm9ZddgL._AC_UL320_.jpg",
+          brand: "Cantabil",
+          title: "Cotton Blend Self Design Full Sleeve Regular Fit Formal Shirt for Men with Pocket | Formal Shirt for Men | Formal Wear Shirts for Men",
+          price: "878",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "5",
+          color: "Sky blue",
+        }
+      }, {
+        card28: {
+          image: "https://m.media-amazon.com/images/I/61aGsNUU3sL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Shirt",
+          price: "840",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "3.8",
+          color: "Sky blue",
+        }
+      }, {
+        card29: {
+          image: "https://m.media-amazon.com/images/I/61GF+DnTfIL._AC_UL320_.jpg",
+          brand: "Allen Cooper",
+          title: "Solid Casual Shirts for Men",
+          price: "919",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "3.6",
+          color: "Sky blue",
+        }
+      }, {
+        card30: {
+          image: "https://m.media-amazon.com/images/I/61vOh+WsVpL._AC_UL320_.jpg",
+          brand: "Van Heusen",
+          title: "Men's Slim Fit Formal Shirt",
+          price: "1,179",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "Shirt",
+          rating: "3.9",
+          color: "Sky blue",
+        }
+      }
+
+    ]
+  };
+
+  for (let i = 0; i < shirtdata.products.length; i++) {
+
+    for (let key in shirtdata.products[i]) {
+
+      let carddiv = document.createElement("div")
+      carddiv.setAttribute("class", "carddiv")
+
+      let imgdiv = document.createElement("div")
+      imgdiv.setAttribute("class", "imgdiv")
+
+      let productimg = document.createElement("img")
+      productimg.setAttribute("class", "productimg")
+      productimg.setAttribute("src", shirtdata.products[i][key].image)
+
+      let brand = document.createElement("p")
+      brand.setAttribute("class", "brand")
+      brand.innerText = shirtdata.products[i][key].brand
+
+      let title = document.createElement("p")
+      title.setAttribute("class", "title")
+      title.innerText = shirtdata.products[i][key].title
+
+      let rating = document.createElement("p")
+      rating.setAttribute("class", "rating")
+      rating.innerText = `Rating: ${shirtdata.products[i][key].rating}`
+
+      let price = document.createElement("p")
+      price.setAttribute("class", "price")
+      price.innerText = ` M.R.P: ₹${shirtdata.products[i][key].price}`
+
+      let del = document.createElement("p")
+      del.setAttribute("class", "delivery")
+      del.innerText = shirtdata.products[i][key].delivery
+
+      imgdiv.append(productimg)
+
+      carddiv.append(imgdiv, brand, title, rating, price, del)
+
+      document.getElementById("cont").append(carddiv)
+
+      if (shirtdata.products[i][key].badge) {
+        let deal = document.createElement("div");
+        deal.setAttribute("class", "deal");
+        deal.innerText = shirtdata.products[i][key].badge;
+        carddiv.append(deal);
+      }
+
+      
+
+    }
+
+  }
+
+
+
+
+  // pant data //
+
+  let pantData = {
+    products: [
+      {
+        card1: {
+          image: "https://m.media-amazon.com/images/I/61TIDpH-MXL._AC_UL320_.jpg",
+          brand: "American Eagle",
+          title: "Men's Slim Fit Jeans",
+          rating: "3.7",
+          price: "1669",
+          badge: "Deal of the Day",
+          delivery: "FREE Delivery by Amazon",
+          category: "pants",
+        }
+      },
+      {
+        card2: {
+          image: "https://m.media-amazon.com/images/I/412vVvO88BL._AC_UL320_.jpg",
+          brand: "Alpha Array",
+          title: "Comfort Slim Fit Jeans for Men",
+          rating: "4.7",
+          price: "1,799",
+          delivery: "FREE Delivery by Amazon",
+          category: "pants",
+        }
+      },
+
+      {
+        card3: {
+          image: "https://m.media-amazon.com/images/I/71a3OycnGYL._AC_UL320_.jpg",
+          brand: "Billford",
+          title: "Billford Men's Comfortable Stretchable Casual Denim Jeans Slim Fit Mid Rise Flat Front Full Length Modern & Fashionable for Casual Wear Comfort and Flexibility",
+          rating: "3.5",
+          price: "699",
+          badge: "Deal of the Day",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      },
+
+      {
+        card4: {
+          image: "https://m.media-amazon.com/images/I/71pLByK+SFL._AC_UL320_.jpg",
+          brand: "Wrangler",
+          title:  "Men's Millard Blue Jeans (Regular)",
+          rating: "4.2",
+          price: "1,599",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      }, {
+        card5: {
+          image: "https://m.media-amazon.com/images/I/613hmtm815L._AC_UL320_.jpg",
+          brand: "GRECIILOOKS",
+          title: "Men Casual Pants",
+          rating: "3.5",
+          price: "799",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      }, {
+        card6: {
+          image: "https://m.media-amazon.com/images/I/61EJxytnV5L._AC_UL320_.jpg",
+          brand: "Urbano Fashion",
+          title: "Men's Slim Fit Washed Jeans Stretchable",
+          rating: "3.6",
+          price: "602",
+          delivery: "FREE Delivery by Amazon",
+        }
+      }, {
+        card7: {
+          image: "https://m.media-amazon.com/images/I/51lHABOtmPL._AC_UL320_.jpg",
+          brand: "The Indian Garage Co",
+          title: "Men Jeans",
+          rating: "4",
+          price: "688",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      }, {
+        card8: {
+          image: "https://m.media-amazon.com/images/I/616alUQkWDL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men's Comfort Skinny Jeans",
+          rating: "4",
+          price: "1,179",
+          delivery: "FREE Delivery by Amazon",
+          badge: "Deal of the Day",
+          cateogry: "pants",
+        }
+      }, {
+        card9: {
+          image: "https://m.media-amazon.com/images/I/61nLsdHiCTL._AC_UL320_.jpg",
+          brand: "Ben Martin",
+          title: "Men's Casual Strechable Denim Tapered Fit Carrot Jeans",
+          rating: "2.9",
+          price: "699",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants"
+        }
+      }, {
+        card10: {
+          image: "https://m.media-amazon.com/images/I/51JDUyK3ouL._AC_UL320_.jpg",
+          brand: "Urbano Fashion",
+          title: "Men's Washed Jeans Stretchable",
+          rating: "3",
+          price: "499",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      }, {
+        card11: {
+          image: "https://m.media-amazon.com/images/I/51aWSQ0TpIL._AC_UL320_.jpg",
+          brand: "Levi's",
+          title: "Men's 512 Slim Tapered Fit Mid Rise Stretchable Jeans",
+          rating: "3.9",
+          price: "1649",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      }, {
+        card12: {
+          image: "https://m.media-amazon.com/images/I/8149YA4ku7L._AC_UL320_.jpg",
+          brand: "Urbano Fashion",
+          title: "Men's Slim Fit Denim Jeans Stretchable",
+          rating: "3.5",
+          price: "636",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+        }
+      }, {
+        card13: {
+          image: "https://m.media-amazon.com/images/I/515olk-XS-L._AC_UL320_.jpg",
+          brand: "Ben Martin",
+          title: "Men's Denim Slim Fit Strechable Jeans",
+          price: "549",
+          delivery: "FREE Delivery by Amazon",
+          rating: "3.6"
+        }
+      }, {
+        card14: {
+          image: "https://m.media-amazon.com/images/I/51PPTKJ1dRL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men Regular Fit Pants",
+          price: "929",
+          cateogry: "pants",
+          delivery: "FREE Delivery by Amazon",
+          rating: "4"
+        }
+      }, {
+        card15: {
+          image: "https://m.media-amazon.com/images/I/61BwMlXsJzL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men Jeans",
+          price: "1179",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "4.2"
+        }
+      }, {
+        card16: {
+          image: "https://m.media-amazon.com/images/I/71f441HDnaL._AC_UL320_.jpg",
+          brand: "Supernova Inc.",
+          title: "Men's Slim Fit Solid Jeans Stretchable",
+          price: "499",
+          delivery: "FREE Delivery by Amazon",
+          rating: "3.6"
+        }
+      }, {
+        card17: {
+          image: "https://m.media-amazon.com/images/I/81o2b-qDKoL._AC_UL320_.jpg",
+          brand: "Allen Solly",
+          title: "Men's Slim Jeans Color Collections",
+          price: "1,439",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.6",
+        }
+      }, {
+        card18: {
+          image: "https://m.media-amazon.com/images/I/51auautCipL._AC_UL320_.jpg",
+          brand: "Levi's",
+          title: "Men's 511 Slim Fit Mid Rise Jeans",
+          price: "1,649",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.7",
+          badge: "Deal of the Day",
+        }
+      }, {
+        card19: {
+          image: "https://m.media-amazon.com/images/I/61QoLs37KAL._AC_UL320_.jpg",
+          brand: "Pepe Jeans",
+          title: "Men's Slim Jeans",
+          price: "1763",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "4.1"
+        }
+      }, {
+        card20: {
+          image: "https://m.media-amazon.com/images/I/61c-oQQBjoL._AC_UL320_.jpg",
+          brand: "Levi's",
+          title: "Men's 511 Slim Fit Mid Rise Jeans",
+          price: "1649",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "4",
+          badge: "Deal of the Day"
+        }
+      }, {
+        card21: {
+          image: "https://m.media-amazon.com/images/I/61boSZSvRsL._AC_UL320_.jpg",
+          brand: "Allen Solly",
+          title: "Men Jeans",
+          price: "1,299",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.5",
+        }
+      }, {
+        card22: {
+          image: "https://m.media-amazon.com/images/I/71kfMr9U0RL._AC_UL320_.jpg",
+          brand: "Pepe Jeans",
+          title: "Men's Regular Jeans",
+          price: "2,339",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.6",
+        }
+      }, {
+        card23: {
+          image: "https://m.media-amazon.com/images/I/61KGHTiK5sL._AC_UL320_.jpg",
+          brand: "Billford",
+          title: "Men Jeans",
+          price: "699",
+          delivery: "FREE Delivery by Amazon",
+          rating: "3.6",
+          cateogry: "pants",
+          
+        }
+      }, {
+        card24: {
+          image: "https://m.media-amazon.com/images/I/51nW98RxOLL._AC_UL320_.jpg",
+          brand: "Levi's",
+          title: "Men's 511 Styled Slim Fit Jeans",
+          price: "1,649",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.9",
+        }
+      }, {
+        card25: {
+          image: "https://m.media-amazon.com/images/I/81c5cscWSAL._AC_UL320_.jpg",
+          brand: "U.S. POLO ASSN.",
+          title: "Men's Jeans",
+          price: "1,349",
+          delivery: "FREE Delivery by Amazon",
+          rating: "4",
+          cateogry: "pants",
+
+        }
+      }, {
+        card26: {
+          image: "https://m.media-amazon.com/images/I/51VY-VupBYL._AC_UL320_.jpg",
+          brand: "Levi's",
+          title: "Men's 512 Slim Tapered Fit Stretchable Jeans",
+          price: "1,619",
+          delivery: "FREE Delivery by Amazon",
+          rating: "3.9",
+          cateogry: "pants",
+          badge: "Deal of the Day"
+        }
+      }, {
+        card27: {
+          image: "https://m.media-amazon.com/images/I/71xZHNDtdqL._AC_UL320_.jpg",
+          brand: "Peter England",
+          title: "Men Regular Fit Jeans",
+          price: "949",
+          cateogry: "pants",
+          rating: "5",
+        }
+      }, {
+        card28: {
+          image: "https://m.media-amazon.com/images/I/81Jk3frRCML._AC_UL320_.jpg",
+          brand: "Urbano Fashion",
+          title: "Men's Slim Fit Washed Jeans Stretchable",
+          price: "749",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.5",
+        }
+      }, {
+        card29: {
+          image: "https://m.media-amazon.com/images/I/51dlhi2jZuL._AC_UL320_.jpg",
+          brand: "Levi's",
+          title: "Men's 512 Slim Tapered Fit High-Rise Jeans",
+          price: "2,429",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.6",
+        }
+      }, {
+        card30: {
+          image: "https://m.media-amazon.com/images/I/61MnQqLAVOL._AC_UL320_.jpg",
+          brand: "Urbano Fashion",
+          title: "Men's Slim Fit Black Stretch Jeans",
+          price: "587",
+          delivery: "FREE Delivery by Amazon",
+          cateogry: "pants",
+          rating: "3.9"
+        }
+      }
+
+    ]
+  };
+
+
+
+  for(let i = 0; i < pantData.products.length; i++ ){
+
+    for(let key in pantData.products[i]){
+      
+      let carddiv = document.createElement("div")
+      carddiv.setAttribute("class", "carddiv")
+
+      let imgdiv = document.createElement("div")
+      imgdiv.setAttribute("class", "imgdiv")
+
+      let productimg = document.createElement("img")
+      productimg.setAttribute("class", "productimg")
+      productimg.setAttribute("src", pantData.products[i][key].image)
+
+      let brand = document.createElement("p")
+      brand.setAttribute("class", "brand")
+      brand.innerText = pantData.products[i][key].brand
+
+      let title = document.createElement("p")
+      title.setAttribute("class", "title")
+      title.innerText = pantData.products[i][key].title
+
+      let rating = document.createElement("p")
+      rating.setAttribute("class", "rating")
+      rating.innerText = `Rating: ${pantData.products[i][key].rating}`
+
+      let price = document.createElement("p")
+      price.setAttribute("class", "price")
+      price.innerText = ` M.R.P: ₹${pantData.products[i][key].price}`
+
+      let del = document.createElement("p")
+      del.setAttribute("class", "delivery")
+      del.innerText = pantData.products[i][key].delivery
+
+      imgdiv.append(productimg)
+
+      carddiv.append(imgdiv, brand, title, rating, price, del)
+
+      document.getElementById("cont").append(carddiv)
+
+      if (shirtdata.products[i][key].badge) {
+        let deal = document.createElement("div");
+        deal.setAttribute("class", "deal");
+        deal.innerText = shirtdata.products[i][key].badge;
+        carddiv.append(deal);
+      }
+
+    }
+
+  }
+
+</script>
+
 </html>
