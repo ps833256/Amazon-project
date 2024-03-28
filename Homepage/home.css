@@ -585,7 +585,7 @@ input[type="radio"]:checked {
   position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 250px;
+  /* margin-bottom: 250px; */
 }
 
 #lefticon {
@@ -794,6 +794,8 @@ input[type="radio"]:checked {
 }
 
 .cardcontainer {
+  background-color: red;
+  flex-wrap: wrap;
   padding: 10px;
   gap: 20px;
   display: flex;
@@ -801,10 +803,15 @@ input[type="radio"]:checked {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 450px;
-  position: absolute;
-  top: 63%;
+  height: auto;
+  /* position: absolute;
+  top: 63%; */
+  
 }
+
+
+
+
 
 
 .firstsection {
@@ -892,10 +899,12 @@ input[type="radio"]:checked {
     0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-#wholecardcont{
+/* #wholecardcont{
   width: auto;
   height: auto;
-}
+  display: flex;
+  flex-wrap: wrap;
+} */
 
 #card3{
   padding: 15px;
@@ -932,14 +941,18 @@ color: #c45500;
 
 .cardcontainer2 {
   padding: 10px;
-  background-color: #E3E6E6;
+  background-color: blue;
+  /* background-color: #E3E6E6; */
   gap: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* margin-top: 320px; */
+
   justify-content: center;
   width: 100%;
-  height: 450px;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 #card5{
@@ -1855,3 +1868,17 @@ color: #C7511F;
   color: #DDDD;
   font-size: 12px;
 }
+
+/* @media(max-width: 768px){
+
+  #navbarcont{
+    width: 100%;
+  }
+
+  .cardcontainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+} */
