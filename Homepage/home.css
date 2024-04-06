@@ -805,12 +805,9 @@ input[type="radio"]:checked {
   width: 100%;
   height: auto;
   /* position: absolute;
-  top: 63%; */
+  top: 50%; */
   
 }
-
-
-
 
 
 
@@ -899,12 +896,7 @@ input[type="radio"]:checked {
     0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-/* #wholecardcont{
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-} */
+
 
 #card3{
   padding: 15px;

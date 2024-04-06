@@ -1569,688 +1569,738 @@ function updateoptionsPosition() {
 updateoptionsPosition();
 window.addEventListener("scroll", updateoptionsPosition);
 
-
-let shirtdata = {
+let shirtPantdata = {
   products: [
     {
-      card1: {
-        image: "https://m.media-amazon.com/images/I/614IHHBjS4L._AC_UL320_.jpg",
-        brand: "KINGDOM OF WHITE",
-        title: "Replay Full Sleeves White Shirt with Regular Collar Casual/Formal Shirt | 100% Cotton Fabric, Full Sleeve, Regular Collar Shirt for Men, Regular Fit",
-        rating: "3.9",
-        badge: "Limited time deal",
-        price: "₹1,177 M.R.P: ₹1,499 (21% off) Save ₹50 with coupon (limited sizes/colours)",
-        category: "shirts",  
+      id: "1",
+      image: "https://m.media-amazon.com/images/I/614IHHBjS4L._AC_UL320_.jpg",
+      brand: "KINGDOM OF WHITE",
+      title: "Replay Full Sleeves White Shirt with Regular Collar Casual/Formal Shirt | 100% Cotton Fabric, Full Sleeve, Regular Collar Shirt for Men, Regular Fit",
+      rating: "3.9",
+      badge: "Limited time deal",
+      price: "₹1,499",
+      category: "Shirts",
+      color: "white",
+      delivery: "FREE Delivery by Amazon",
 
-        color: "white"
-      }
     },
     {
-      card2: {
-        image: "https://m.media-amazon.com/images/I/51JIlfNvLGL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Regular Fit Shirt",
-        rating: "4",
-        price: "₹1,012 M.R.P: ₹1,199 (16% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "white"
-      }
-    },
+      id: "2",
+      image: "https://m.media-amazon.com/images/I/51JIlfNvLGL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Regular Fit Shirt",
+      rating: "4",
+      price: "₹1,199",
+      category: "Shirts",
+      color: "white",
+      delivery: "FREE Delivery by Amazon",
 
-    {
-      card3: {
-        image: "https://m.media-amazon.com/images/I/61MMzZFJbWL._AC_UL320_.jpg",
-        brand: "Arrow",
-        title: "Men's Shirt",
-        rating: "4.2",
-        price: "₹1,279 M.R.P: ₹2,199 (42% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "white"
-      }
     },
 
     {
-      card4: {
-        image: "https://m.media-amazon.com/images/I/712CQewF59L._AC_UL320_.jpg",
-        brand: "Arrow",
-        title: "Men's Solid White Full Sleeve Slim Fit Cotton Formal Shirt",
-        rating: "4",
-        price: "₹1,139 M.R.P: ₹1,999 (43% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "white"
-      }
+      id: "3",
+      image: "https://m.media-amazon.com/images/I/61MMzZFJbWL._AC_UL320_.jpg",
+      brand: "Arrow",
+      title: "Men's Shirt",
+      rating: "4.2",
+      price: "₹1,279",
+      category: "Shirts",
+      color: "white",
+      delivery: "FREE Delivery by Amazon",
+
+    },
+
+    {
+      id: "4",
+      image: "https://m.media-amazon.com/images/I/712CQewF59L._AC_UL320_.jpg",
+      brand: "Arrow",
+      title: "Men's Solid White Full Sleeve Slim Fit Cotton Formal Shirt",
+      rating: "4",
+      price: "₹1,139",
+      category: "Shirts",
+      color: "white",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card5: {
-        image: "https://m.media-amazon.com/images/I/71hfutLZZ7L._AC_UL320_.jpg",
-        brand: "Allen Solly",
-        title: "Men's Slim Fit Shirt",
-        rating: "3.7",
-        price: "₹1,044 M.R.P: ₹1,599 (35% off)FREE Delivery by Amazon More Buying Choices ₹1,039(3 new offers)",
-        category: "Shirts",
-        color: "white"
-      }
+      id: "5",
+      image: "https://m.media-amazon.com/images/I/71hfutLZZ7L._AC_UL320_.jpg",
+      brand: "Allen Solly",
+      title: "Men's Slim Fit Shirt",
+      rating: "3.7",
+      price: "₹1,044",
+      category: "Shirts",
+      color: "white",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card6: {
-        image: "https://m.media-amazon.com/images/I/51YWjChA95L._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Regular Fit Shirt",
-        rating: "4.1",
-        price: "₹1,067 M.R.P: ₹1,199 (11% off) FREE Delivery by Amazon",
-        color: "white",
-        category: "Shirts"
-      }
+
+      id: "6",
+      image: "https://m.media-amazon.com/images/I/51YWjChA95L._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Regular Fit Shirt",
+      rating: "4.1",
+      price: "₹1,067",
+      color: "white",
+      category: "Shirts",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card7: {
-        image: "https://m.media-amazon.com/images/I/51ystSbVCQL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men Shirt",
-        rating: "4",
-        price: "₹1,519 M.R.P: ₹1,599 (5% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "black"
-      }
+
+      id: "7",
+      image: "https://m.media-amazon.com/images/I/51ystSbVCQL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men Shirt",
+      rating: "4",
+      price: "₹1,519",
+      category: "Shirts",
+      color: "black",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card8: {
-        image: "https://m.media-amazon.com/images/I/71-oqCe5qZL._AC_UL320_.jpg",
-        brand: "Arrow",
-        title: "Men's Shirt",
-        rating: "4.2",
-        price: "₹1,249 M.R.P: ₹2,199 (43% off)FREE Delivery by Amazon",
-        badge: "Deal of the Day",
-        category: "Shirts",
-        color: "black"
-      }
+      id: "8",
+
+      image: "https://m.media-amazon.com/images/I/71-oqCe5qZL._AC_UL320_.jpg",
+      brand: "Arrow",
+      title: "Men's Shirt",
+      rating: "4.2",
+      price: "₹1,249",
+      badge: "Deal of the Day",
+      category: "Shirts",
+      color: "black",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card9: {
-        image: "https://m.media-amazon.com/images/I/51IXgnpzkFL._AC_UL320_.jpg",
-        brand: "Allen Solly",
-        title: "Men's Regular Fit Shirt",
-        rating: "3.8",
-        price: "₹959 M.R.P: ₹1,599 (40% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "black"
-      }
+      id: "9",
+      image: "https://m.media-amazon.com/images/I/51IXgnpzkFL._AC_UL320_.jpg",
+      brand: "Allen Solly",
+      title: "Men's Regular Fit Shirt",
+      rating: "3.8",
+      price: "₹959",
+      category: "Shirts",
+      color: "black",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card10: {
-        image: "https://m.media-amazon.com/images/I/51Q+EsI3-sL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Shirt",
-        rating: "5",
-        price: "₹1,029 M.R.P: ₹1,799 (43% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "black"
-      }
+      id: "10",
+      image: "https://m.media-amazon.com/images/I/51Q+EsI3-sL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Shirt",
+      rating: "5",
+      price: "₹1,029",
+      category: "Shirts",
+      color: "black",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card11: {
-        image: "https://m.media-amazon.com/images/I/61DC2+8DwML._AC_UL320_.jpg",
-        brand: "Jack & Jones",
-        title: "Men's Slim Fit Casual Shirt",
-        rating: "4.2",
-        price: "₹984 M.R.P: ₹2,299 (57% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "Blue denim"
-      }
+      id: "11",
+      image: "https://m.media-amazon.com/images/I/61DC2+8DwML._AC_UL320_.jpg",
+      brand: "Jack & Jones",
+      title: "Men's Slim Fit Casual Shirt",
+      rating: "4.2",
+      price: "₹984",
+      category: "Shirts",
+      color: "Blue denim",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card12: {
-        image: "https://m.media-amazon.com/images/I/71h-kTg6aSL._AC_UL320_.jpg",
-        brand: "Dennis Lingo",
-        title: "Men's Solid Denim Cotton Slim Fit Full Sleeve Casual Shirt",
-        rating: "4.4",
-        price: "₹449 M.R.P: ₹2,999 (85% off) FREE Delivery over ₹499. Fulfilled by Amazon",
-        category: "Shirts",
-        color: "Blue denim",
-      }
+      id: "12",
+
+      image: "https://m.media-amazon.com/images/I/71h-kTg6aSL._AC_UL320_.jpg",
+      brand: "Dennis Lingo",
+      title: "Men's Solid Denim Cotton Slim Fit Full Sleeve Casual Shirt",
+      rating: "4.4",
+      price: "₹449",
+      category: "Shirts",
+      color: "Blue denim",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card13: {
-        image: "https://m.media-amazon.com/images/I/51onE1Y-5FL._AC_UL320_.jpg",
-        brand: "Jack & Jones",
-        title: "Men's Solid Regular Fit Spread-Collar Casual Shirt",
-        price: "₹1,574 M.R.P: ₹4,499 (65% off)FREE Delivery by Amazon",
-        color: "Blue denim",
-        category: "Shirts"
-      }
+      id: "13",
+      image: "https://m.media-amazon.com/images/I/51onE1Y-5FL._AC_UL320_.jpg",
+      brand: "Jack & Jones",
+      title: "Men's Solid Regular Fit Spread-Collar Casual Shirt",
+      price: "₹1,574",
+      color: "Blue denim",
+      category: "Shirts",
+      rating: "4",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card14: {
-        image: "https://m.media-amazon.com/images/I/71wZOJvHpOL._AC_UL320_.jpg",
-        brand: "Lee",
-        title: "Men Shirt",
-        price: "₹1,700 M.R.P: ₹3,399 (50% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "Blue denim",
-      }
+      id: "14",
+      image: "https://m.media-amazon.com/images/I/71wZOJvHpOL._AC_UL320_.jpg",
+      brand: "Lee",
+      title: "Men Shirt",
+      price: "₹1,700",
+      category: "Shirts",
+      color: "Blue denim",
+      rating: "4.5",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card15: {
-        image: "https://m.media-amazon.com/images/I/61yHbDFfkqL._AC_UL320_.jpg",
-        brand: "Dennis Lingo",
-        title: "Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
-        price: "₹549 M.R.P: ₹1,849 (70% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "Dark maroon",
-      }
+      id: "15",
+      image: "https://m.media-amazon.com/images/I/61yHbDFfkqL._AC_UL320_.jpg",
+      brand: "Dennis Lingo",
+      title: "Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
+      price: "₹549",
+      category: "Shirts",
+      color: "Dark maroon",
+      rating: "4.4",
+      delivery: "FREE Delivery by Amazon",
+
+
     }, {
-      card16: {
-        image: "https://m.media-amazon.com/images/I/71QCdHMAw0L._AC_UL320_.jpg",
-        brand: "Park Avenue",
-        title: "Men's Shirt",
-        badge: "Deal of the day",
-        price: "₹919 M.R.P: ₹2,099 (56% off) FREE Delivery by Amazon",
-        color: "Dark maroon",
-        category:"Shirts"
-      }
+      id: "16",
+
+      image: "https://m.media-amazon.com/images/I/71QCdHMAw0L._AC_UL320_.jpg",
+      brand: "Park Avenue",
+      title: "Men's Shirt",
+      badge: "Deal of the day",
+      price: "₹919",
+      color: "Dark maroon",
+      category: "Shirts",
+      rating: "4",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card17: {
-        image: "https://m.media-amazon.com/images/I/61z-e2gUkML._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Slim Fit 100% Cotton Shirt",
-        price: "₹1,259 M.R.P: ₹1,599 (21% off)FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "3.8",
-        color: "Dark maroon",
-      }
+      id: "17",
+      image: "https://m.media-amazon.com/images/I/61z-e2gUkML._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Slim Fit 100% Cotton Shirt",
+      price: "₹1,259",
+      category: "Shirts",
+      rating: "3.8",
+      color: "Dark maroon",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card18: {
-        image: "https://m.media-amazon.com/images/I/81wgDboGvbL._AC_UL320_.jpg",
-        brand: "Park Avenue",
-        title: "Men's Pure Cotton Oxford Pattern Slim Fit Semi Cutaway Collar Full Sleeve Formal Shirt",
-        price: "₹1,009 M.R.P: ₹2,299 (56% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        color: "Dark maroon",
-      }
+      id: "18",
+
+      image: "https://m.media-amazon.com/images/I/81wgDboGvbL._AC_UL320_.jpg",
+      brand: "Park Avenue",
+      title: "Men's Pure Cotton Oxford Pattern Slim Fit Semi Cutaway Collar Full Sleeve Formal Shirt",
+      price: "₹1,009",
+      category: "Shirts",
+      color: "Dark maroon",
+      rating: "3.5",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card19: {
-        image: "https://m.media-amazon.com/images/I/51PUlZCbnzL._AC_UL320_.jpg",
-        brand: "Dennis Lingo",
-        title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
-        price: "₹460 M.R.P: ₹2,299 (80% off) Save 5% with coupon (limited sizes/colours) FREE Delivery over ₹499. Fulfilled by Amazon",
-        category: "Shirts",
-        color: "Dark maroon",
-      }
+      id: "19",
+      image: "https://m.media-amazon.com/images/I/51PUlZCbnzL._AC_UL320_.jpg",
+      brand: "Dennis Lingo",
+      title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+      price: "₹460",
+      category: "Shirts",
+      color: "Dark maroon",
+      rating: "4.6",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card20: {
-        image: "https://m.media-amazon.com/images/I/614rDqs5UyL._AC_UL320_.jpg",
-        brand: "Dennis Lingo",
-        title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
-        price: "₹460 M.R.P: ₹2,299 (80% off) FREE Delivery over ₹499.",
-        category: "Shirts",
-        rating: "3.9",
-        color: "Navy blue",
-      }
+      id: "20",
+      image: "https://m.media-amazon.com/images/I/614rDqs5UyL._AC_UL320_.jpg",
+      brand: "Dennis Lingo",
+      title: "Men's Cotton Solid Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+      price: "₹450",
+      category: "Shirts",
+      rating: "3.9",
+      color: "Navy blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card21: {
-        image: "https://m.media-amazon.com/images/I/71aFm7jdWbL._AC_UL320_.jpg",
-        brand: "Allen Solly",
-        title: "Men's Shirt",
-        price: "₹1,044 M.R.P: ₹1,599 (35% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "3.9",
-        color: "Navy blue",
-      }
+      id: "21",
+      image: "https://m.media-amazon.com/images/I/71aFm7jdWbL._AC_UL320_.jpg",
+      brand: "Allen Solly",
+      title: "Men's Shirt",
+      price: "₹1,044",
+      category: "Shirts",
+      rating: "3.9",
+      color: "Navy blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card22: {
-        image: "https://m.media-amazon.com/images/I/71kzEGfPyCL._AC_UL320_.jpg",
-        brand: "Van Heusen",
-        title: "Men Shirt",
-        price: "₹1,356 M.R.P: ₹2,299 (41% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "4.1",
-        color: "Navy blue",
-      }
+      id: "22",
+      image: "https://m.media-amazon.com/images/I/71kzEGfPyCL._AC_UL320_.jpg",
+      brand: "Van Heusen",
+      title: "Men Shirt",
+      price: "₹1,356",
+      category: "Shirts",
+      rating: "4.1",
+      color: "Navy blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card23: {
-        image: "https://m.media-amazon.com/images/I/61G7lgwP2SL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Slim Fit 100% Cotton Shirt",
-        price: "₹959 M.R.P: ₹1,599 (40% off) FREE Delivery by Amazon",
-        rating: "3.8",
-        category: "Shirts",
-        color: "Navy blue"
-      }
+      id: "23",
+      image: "https://m.media-amazon.com/images/I/61G7lgwP2SL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Slim Fit 100% Cotton Shirt",
+      price: "₹959",
+      rating: "3.8",
+      category: "Shirts",
+      color: "Navy blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card24: {
-        image: "https://m.media-amazon.com/images/I/618B4LhlUxL._AC_UL320_.jpg",
-        brand: "Pepe Jeans",
-        title: "Men's Regular Fit Shirt",
-        price: "₹1,009 M.R.P: ₹2,199 (54% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "4.1",
-        color: "Navy blue",
-      }
+      id: "24",
+      image: "https://m.media-amazon.com/images/I/618B4LhlUxL._AC_UL320_.jpg",
+      brand: "Pepe Jeans",
+      title: "Men's Regular Fit Shirt",
+      price: "₹1,009",
+      category: "Shirts",
+      rating: "4.1",
+      color: "Navy blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card25: {
-        image: "https://m.media-amazon.com/images/I/71QZ41xermL._AC_UL320_.jpg",
-        brand: "Allen Solly",
-        title: "Men's Shirt",
-        price: "₹1,044 M.R.P: ₹1,599 (35% off) FREE Delivery by Amazon",
-        rating: "3.9",
-        category: "Shirts",
-        color: "Sky blue",
-      }
+      id: "25",
+      image: "https://m.media-amazon.com/images/I/71QZ41xermL._AC_UL320_.jpg",
+      brand: "Allen Solly",
+      title: "Men's Shirt",
+      price: "₹1,044",
+      rating: "3.9",
+      category: "Shirts",
+      color: "Sky blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card26: {
-        image: "https://m.media-amazon.com/images/I/61Hq5zUBWEL._AC_UL320_.jpg",
-        brand: "Arrow",
-        title: "Solid Manhattan Slim Fit Shirt",
-        price: "₹1,319 M.R.P: ₹2,199 (40% off) FREE Delivery by Amazon",
-        rating: "5",
-        category: "Shirts",
-        color: "Sky blue",
-      }
+      id: "26",
+      image: "https://m.media-amazon.com/images/I/61Hq5zUBWEL._AC_UL320_.jpg",
+      brand: "Arrow",
+      title: "Solid Manhattan Slim Fit Shirt",
+      price: "₹1,319",
+      rating: "5",
+      category: "Shirts",
+      color: "Sky blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card27: {
-        image: "https://m.media-amazon.com/images/I/61yEm9ZddgL._AC_UL320_.jpg",
-        brand: "Cantabil",
-        title: "Cotton Blend Self Design Full Sleeve Regular Fit Formal Shirt for Men with Pocket | Formal Shirt for Men | Formal Wear Shirts for Men",
-        price: "₹878 M.R.P: ₹2,199 (60% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "5",
-        color: "Sky blue",
-      }
+      id: "27",
+
+      image: "https://m.media-amazon.com/images/I/61yEm9ZddgL._AC_UL320_.jpg",
+      brand: "Cantabil",
+      title: "Cotton Blend Self Design Full Sleeve Regular Fit Formal Shirt for Men with Pocket | Formal Shirt for Men | Formal Wear Shirts for Men",
+      price: "₹878",
+      category: "Shirts",
+      rating: "5",
+      color: "Sky blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card28: {
-        image: "https://m.media-amazon.com/images/I/61aGsNUU3sL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Shirt",
-        price: "₹840 M.R.P: ₹1,199 (30% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "3.8",
-        color: "Sky blue",
-      }
+      id: "28",
+
+      image: "https://m.media-amazon.com/images/I/61aGsNUU3sL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Shirt",
+      price: "₹840",
+      category: "Shirts",
+      rating: "3.8",
+      color: "Sky blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card29: {
-        image: "https://m.media-amazon.com/images/I/61GF+DnTfIL._AC_UL320_.jpg",
-        brand: "Allen Cooper",
-        title: "Solid Casual Shirts for Men",
-        price: "₹919 M.R.P: ₹2,999 (69% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "3.6",
-        color: "Sky blue",
-      }
+
+      id: "29",
+
+      image: "https://m.media-amazon.com/images/I/61GF+DnTfIL._AC_UL320_.jpg",
+      brand: "Allen Cooper",
+      title: "Solid Casual Shirts for Men",
+      price: "₹919",
+      category: "Shirts",
+      rating: "3.6",
+      color: "Sky blue",
+      delivery: "FREE Delivery by Amazon",
+
     }, {
-      card30: {
-        image: "https://m.media-amazon.com/images/I/61vOh+WsVpL._AC_UL320_.jpg",
-        brand: "Van Heusen",
-        title: "Men's Slim Fit Formal Shirt",
-        price: "₹1,179 M.R.P: ₹1,999 (41% off) FREE Delivery by Amazon",
-        category: "Shirts",
-        rating: "3.9",
-        color: "Sky blue",
-      }
+      id: "30",
+
+      image: "https://m.media-amazon.com/images/I/61vOh+WsVpL._AC_UL320_.jpg",
+      brand: "Van Heusen",
+      title: "Men's Slim Fit Formal Shirt",
+      price: "₹1,179",
+      category: "Shirts",
+      rating: "3.9",
+      color: "Sky blue",
+      delivery: "FREE Delivery by Amazon",
+
+    },
+
+    {
+
+      id: "31",
+
+      image: "https://m.media-amazon.com/images/I/61TIDpH-MXL._AC_UL320_.jpg",
+      brand: "American Eagle",
+      title: "Men's Slim Fit Jeans",
+      rating: "3.7",
+      price: "1669",
+      badge: "Deal of the Day",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    },
+    {
+
+      id: "32",
+      image: "https://m.media-amazon.com/images/I/412vVvO88BL._AC_UL320_.jpg",
+      brand: "Alpha Array",
+      title: "Comfort Slim Fit Jeans for Men",
+      rating: "4.7",
+      price: "1,799",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    },
+
+    {
+      id: "33",
+
+      image: "https://m.media-amazon.com/images/I/71a3OycnGYL._AC_UL320_.jpg",
+      brand: "Billford",
+      title: "Billford Men's Comfortable Stretchable Casual Denim Jeans Slim Fit Mid Rise Flat Front Full Length Modern & Fashionable for Casual Wear Comfort and Flexibility",
+      rating: "3.5",
+      price: "699",
+      badge: "Deal of the Day",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    },
+
+    {
+
+      id: "34",
+      image: "https://m.media-amazon.com/images/I/71pLByK+SFL._AC_UL320_.jpg",
+      brand: "Wrangler",
+      title: "Men's Millard Blue Jeans (Regular)",
+      rating: "4.2",
+      price: "1,599",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    }, {
+
+      id: "35",
+      image: "https://m.media-amazon.com/images/I/613hmtm815L._AC_UL320_.jpg",
+      brand: "GRECIILOOKS",
+      title: "Men Casual Pants",
+      rating: "3.5",
+      price: "799",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    }, {
+
+      id: "36",
+
+      image: "https://m.media-amazon.com/images/I/61EJxytnV5L._AC_UL320_.jpg",
+      brand: "Urbano Fashion",
+      title: "Men's Slim Fit Washed Jeans Stretchable",
+      rating: "3.6",
+      price: "602",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants"
+
+    }, {
+
+      id: "37",
+      image: "https://m.media-amazon.com/images/I/51lHABOtmPL._AC_UL320_.jpg",
+      brand: "The Indian Garage Co",
+      title: "Men Jeans",
+      rating: "4",
+      price: "688",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    }, {
+      id: "38",
+
+      image: "https://m.media-amazon.com/images/I/616alUQkWDL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men's Comfort Skinny Jeans",
+      rating: "4",
+      price: "1,179",
+      delivery: "FREE Delivery by Amazon",
+      badge: "Deal of the Day",
+      category: "pants",
+
+    }, {
+
+      id: "39",
+      image: "https://m.media-amazon.com/images/I/61nLsdHiCTL._AC_UL320_.jpg",
+      brand: "Ben Martin",
+      title: "Men's Casual Strechable Denim Tapered Fit Carrot Jeans",
+      rating: "2.9",
+      price: "699",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants"
+
+    }, {
+
+      id: "40",
+      image: "https://m.media-amazon.com/images/I/51JDUyK3ouL._AC_UL320_.jpg",
+      brand: "Urbano Fashion",
+      title: "Men's Washed Jeans Stretchable",
+      rating: "3",
+      price: "499",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    }, {
+
+      id: "41",
+      image: "https://m.media-amazon.com/images/I/51aWSQ0TpIL._AC_UL320_.jpg",
+      brand: "Levi's",
+      title: "Men's 512 Slim Tapered Fit Mid Rise Stretchable Jeans",
+      rating: "3.9",
+      price: "1649",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    }, {
+
+      id: "42",
+      image: "https://m.media-amazon.com/images/I/8149YA4ku7L._AC_UL320_.jpg",
+      brand: "Urbano Fashion",
+      title: "Men's Slim Fit Denim Jeans Stretchable",
+      rating: "3.5",
+      price: "636",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+
+    }, {
+      id: "43",
+      image: "https://m.media-amazon.com/images/I/515olk-XS-L._AC_UL320_.jpg",
+      brand: "Ben Martin",
+      title: "Men's Denim Slim Fit Strechable Jeans",
+      price: "549",
+      delivery: "FREE Delivery by Amazon",
+      rating: "3.6",
+      category: "pants"
+
+    }, {
+      id: "44",
+
+      image: "https://m.media-amazon.com/images/I/51PPTKJ1dRL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men Regular Fit Pants",
+      price: "929",
+      category: "pants",
+      delivery: "FREE Delivery by Amazon",
+      rating: "4"
+
+    }, {
+      id: "45",
+
+      image: "https://m.media-amazon.com/images/I/61BwMlXsJzL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men Jeans",
+      price: "1179",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "4.2"
+
+    }, {
+      id: "46",
+
+      image: "https://m.media-amazon.com/images/I/71f441HDnaL._AC_UL320_.jpg",
+      brand: "Supernova Inc.",
+      title: "Men's Slim Fit Solid Jeans Stretchable",
+      price: "499",
+      delivery: "FREE Delivery by Amazon",
+      rating: "3.6",
+      category: "pants"
+
+    }, {
+      id: "47",
+
+      image: "https://m.media-amazon.com/images/I/81o2b-qDKoL._AC_UL320_.jpg",
+      brand: "Allen Solly",
+      title: "Men's Slim Jeans Color Collections",
+      price: "1,439",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.6",
+
+    }, {
+      id: "48",
+
+      image: "https://m.media-amazon.com/images/I/51auautCipL._AC_UL320_.jpg",
+      brand: "Levi's",
+      title: "Men's 511 Slim Fit Mid Rise Jeans",
+      price: "1,649",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.7",
+      badge: "Deal of the Day",
+
+    }, {
+      id: "49",
+
+      image: "https://m.media-amazon.com/images/I/61QoLs37KAL._AC_UL320_.jpg",
+      brand: "Pepe Jeans",
+      title: "Men's Slim Jeans",
+      price: "1763",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "4.1"
+
+    }, {
+
+      id: "50",
+      image: "https://m.media-amazon.com/images/I/61c-oQQBjoL._AC_UL320_.jpg",
+      brand: "Levi's",
+      title: "Men's 511 Slim Fit Mid Rise Jeans",
+      price: "1649",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "4",
+      badge: "Deal of the Day"
+
+    }, {
+
+      id: "51",
+      image: "https://m.media-amazon.com/images/I/61boSZSvRsL._AC_UL320_.jpg",
+      brand: "Allen Solly",
+      title: "Men Jeans",
+      price: "1,299",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.5",
+
+    }, {
+      id: "52",
+
+      image: "https://m.media-amazon.com/images/I/71kfMr9U0RL._AC_UL320_.jpg",
+      brand: "Pepe Jeans",
+      title: "Men's Regular Jeans",
+      price: "2,339",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.6",
+
+    }, {
+      id: "53",
+
+      image: "https://m.media-amazon.com/images/I/61KGHTiK5sL._AC_UL320_.jpg",
+      brand: "Billford",
+      title: "Men Jeans",
+      price: "699",
+      delivery: "FREE Delivery by Amazon",
+      rating: "3.6",
+      category: "pants",
+
+
+    }, {
+      id: "54",
+
+      image: "https://m.media-amazon.com/images/I/51nW98RxOLL._AC_UL320_.jpg",
+      brand: "Levi's",
+      title: "Men's 511 Styled Slim Fit Jeans",
+      price: "1,649",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.9",
+
+    }, {
+      id: "55",
+
+      image: "https://m.media-amazon.com/images/I/81c5cscWSAL._AC_UL320_.jpg",
+      brand: "U.S. POLO ASSN.",
+      title: "Men's Jeans",
+      price: "1,349",
+      delivery: "FREE Delivery by Amazon",
+      rating: "4",
+      category: "pants",
+
+
+    }, {
+
+      id: "56",
+      image: "https://m.media-amazon.com/images/I/51VY-VupBYL._AC_UL320_.jpg",
+      brand: "Levi's",
+      title: "Men's 512 Slim Tapered Fit Stretchable Jeans",
+      price: "1,619",
+      delivery: "FREE Delivery by Amazon",
+      rating: "3.9",
+      category: "pants",
+      badge: "Deal of the Day"
+
+    }, {
+
+      id: "57",
+
+      image: "https://m.media-amazon.com/images/I/71xZHNDtdqL._AC_UL320_.jpg",
+      brand: "Peter England",
+      title: "Men Regular Fit Jeans",
+      price: "949",
+      category: "pants",
+      rating: "5",
+      delivery: "FREE Delivery by Amazon",
+
+    }, {
+
+      id: "58",
+      image: "https://m.media-amazon.com/images/I/81Jk3frRCML._AC_UL320_.jpg",
+      brand: "Urbano Fashion",
+      title: "Men's Slim Fit Washed Jeans Stretchable",
+      price: "749",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.5",
+
+    }, {
+      id: "59",
+
+      image: "https://m.media-amazon.com/images/I/51dlhi2jZuL._AC_UL320_.jpg",
+      brand: "Levi's",
+      title: "Men's 512 Slim Tapered Fit High-Rise Jeans",
+      price: "2,429",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.6",
+
+    }, {
+
+      id: "60",
+      image: "https://m.media-amazon.com/images/I/61MnQqLAVOL._AC_UL320_.jpg",
+      brand: "Urbano Fashion",
+      title: "Men's Slim Fit Black Stretch Jeans",
+      price: "587",
+      delivery: "FREE Delivery by Amazon",
+      category: "pants",
+      rating: "3.9"
+
     }
 
   ]
 };
 
 
+document.getElementById("searchicon").addEventListener("click", function () {
+  let searchval = document.getElementById("search").value
 
-document.getElementById("searchicon").addEventListener("click", function(){
+  let searchdata = []
+  let flag = false;
 
-  let searchval= document.getElementById("search").value
+  for (let i = 0; i < shirtPantdata.products.length; i++) {
 
-  let searchdata=[]
-  let flag= false;
+    if (shirtPantdata.products[i].category === searchval) {
+      flag = true;
+      searchdata.push(shirtPantdata.products[i])
+      localStorage.setItem("searchdata", JSON.stringify(searchdata));
 
-  for (let i = 0; i < shirtdata.products.length; i++) {
-    for (let key in shirtdata.products[i]) {
-        if(searchval===shirtdata.products[i][key].category){
-          flag= true;
-          searchdata.push(shirtdata.products[i][key].category)
-          break;
-        }
+
     }
+
   }
 
-  if(flag){
-    let seacrhpage= document.createElement("a")
-    seacrhpage.setAttribute("href", "../Homepage/search.html")
+  document.getElementById("cont").innerHTML = null
+
+  if (flag) {
+    let seacrhpage = document.createElement("a")
+    seacrhpage.setAttribute("href", "../Productpage/search.html")
     seacrhpage.click()
 
   }
 
-})
-
-
-let pantData = {
-  products: [
-    {
-      card1: {
-        image: "https://m.media-amazon.com/images/I/61TIDpH-MXL._AC_UL320_.jpg",
-        brand: "American Eagle",
-        title: "Men's Slim Fit Jeans",
-        rating: "3.7",
-        price: "1669",
-        badge: "Deal of the Day",
-        delivery: "FREE Delivery by Amazon",
-        category: "pants",
-      }
-    },
-    {
-      card2: {
-        image: "https://m.media-amazon.com/images/I/412vVvO88BL._AC_UL320_.jpg",
-        brand: "Alpha Array",
-        title: "Comfort Slim Fit Jeans for Men",
-        rating: "4.7",
-        price: "1,799",
-        delivery: "FREE Delivery by Amazon",
-        category: "pants",
-      }
-    },
-
-    {
-      card3: {
-        image: "https://m.media-amazon.com/images/I/71a3OycnGYL._AC_UL320_.jpg",
-        brand: "Billford",
-        title: "Billford Men's Comfortable Stretchable Casual Denim Jeans Slim Fit Mid Rise Flat Front Full Length Modern & Fashionable for Casual Wear Comfort and Flexibility",
-        rating: "3.5",
-        price: "699",
-        badge: "Deal of the Day",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    },
-
-    {
-      card4: {
-        image: "https://m.media-amazon.com/images/I/71pLByK+SFL._AC_UL320_.jpg",
-        brand: "Wrangler",
-        title:  "Men's Millard Blue Jeans (Regular)",
-        rating: "4.2",
-        price: "1,599",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    }, {
-      card5: {
-        image: "https://m.media-amazon.com/images/I/613hmtm815L._AC_UL320_.jpg",
-        brand: "GRECIILOOKS",
-        title: "Men Casual Pants",
-        rating: "3.5",
-        price: "799",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    }, {
-      card6: {
-        image: "https://m.media-amazon.com/images/I/61EJxytnV5L._AC_UL320_.jpg",
-        brand: "Urbano Fashion",
-        title: "Men's Slim Fit Washed Jeans Stretchable",
-        rating: "3.6",
-        price: "602",
-        delivery: "FREE Delivery by Amazon",
-      }
-    }, {
-      card7: {
-        image: "https://m.media-amazon.com/images/I/51lHABOtmPL._AC_UL320_.jpg",
-        brand: "The Indian Garage Co",
-        title: "Men Jeans",
-        rating: "4",
-        price: "688",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    }, {
-      card8: {
-        image: "https://m.media-amazon.com/images/I/616alUQkWDL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men's Comfort Skinny Jeans",
-        rating: "4",
-        price: "1,179",
-        delivery: "FREE Delivery by Amazon",
-        badge: "Deal of the Day",
-        cateogry: "pants",
-      }
-    }, {
-      card9: {
-        image: "https://m.media-amazon.com/images/I/61nLsdHiCTL._AC_UL320_.jpg",
-        brand: "Ben Martin",
-        title: "Men's Casual Strechable Denim Tapered Fit Carrot Jeans",
-        rating: "2.9",
-        price: "699",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants"
-      }
-    }, {
-      card10: {
-        image: "https://m.media-amazon.com/images/I/51JDUyK3ouL._AC_UL320_.jpg",
-        brand: "Urbano Fashion",
-        title: "Men's Washed Jeans Stretchable",
-        rating: "3",
-        price: "499",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    }, {
-      card11: {
-        image: "https://m.media-amazon.com/images/I/51aWSQ0TpIL._AC_UL320_.jpg",
-        brand: "Levi's",
-        title: "Men's 512 Slim Tapered Fit Mid Rise Stretchable Jeans",
-        rating: "3.9",
-        price: "1649",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    }, {
-      card12: {
-        image: "https://m.media-amazon.com/images/I/8149YA4ku7L._AC_UL320_.jpg",
-        brand: "Urbano Fashion",
-        title: "Men's Slim Fit Denim Jeans Stretchable",
-        rating: "3.5",
-        price: "636",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-      }
-    }, {
-      card13: {
-        image: "https://m.media-amazon.com/images/I/515olk-XS-L._AC_UL320_.jpg",
-        brand: "Ben Martin",
-        title: "Men's Denim Slim Fit Strechable Jeans",
-        price: "549",
-        delivery: "FREE Delivery by Amazon",
-        rating: "3.6"
-      }
-    }, {
-      card14: {
-        image: "https://m.media-amazon.com/images/I/51PPTKJ1dRL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men Regular Fit Pants",
-        price: "929",
-        cateogry: "pants",
-        delivery: "FREE Delivery by Amazon",
-        rating: "4"
-      }
-    }, {
-      card15: {
-        image: "https://m.media-amazon.com/images/I/61BwMlXsJzL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men Jeans",
-        price: "1179",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "4.2"
-      }
-    }, {
-      card16: {
-        image: "https://m.media-amazon.com/images/I/71f441HDnaL._AC_UL320_.jpg",
-        brand: "Supernova Inc.",
-        title: "Men's Slim Fit Solid Jeans Stretchable",
-        price: "499",
-        delivery: "FREE Delivery by Amazon",
-        rating: "3.6"
-      }
-    }, {
-      card17: {
-        image: "https://m.media-amazon.com/images/I/81o2b-qDKoL._AC_UL320_.jpg",
-        brand: "Allen Solly",
-        title: "Men's Slim Jeans Color Collections",
-        price: "1,439",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.6",
-      }
-    }, {
-      card18: {
-        image: "https://m.media-amazon.com/images/I/51auautCipL._AC_UL320_.jpg",
-        brand: "Levi's",
-        title: "Men's 511 Slim Fit Mid Rise Jeans",
-        price: "1,649",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.7",
-        badge: "Deal of the Day",
-      }
-    }, {
-      card19: {
-        image: "https://m.media-amazon.com/images/I/61QoLs37KAL._AC_UL320_.jpg",
-        brand: "Pepe Jeans",
-        title: "Men's Slim Jeans",
-        price: "1763",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "4.1"
-      }
-    }, {
-      card20: {
-        image: "https://m.media-amazon.com/images/I/61c-oQQBjoL._AC_UL320_.jpg",
-        brand: "Levi's",
-        title: "Men's 511 Slim Fit Mid Rise Jeans",
-        price: "1649",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "4",
-        badge: "Deal of the Day"
-      }
-    }, {
-      card21: {
-        image: "https://m.media-amazon.com/images/I/61boSZSvRsL._AC_UL320_.jpg",
-        brand: "Allen Solly",
-        title: "Men Jeans",
-        price: "1,299",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.5",
-      }
-    }, {
-      card22: {
-        image: "https://m.media-amazon.com/images/I/71kfMr9U0RL._AC_UL320_.jpg",
-        brand: "Pepe Jeans",
-        title: "Men's Regular Jeans",
-        price: "2,339",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.6",
-      }
-    }, {
-      card23: {
-        image: "https://m.media-amazon.com/images/I/61KGHTiK5sL._AC_UL320_.jpg",
-        brand: "Billford",
-        title: "Men Jeans",
-        price: "699",
-        delivery: "FREE Delivery by Amazon",
-        rating: "3.6",
-        cateogry: "pants",
-        
-      }
-    }, {
-      card24: {
-        image: "https://m.media-amazon.com/images/I/51nW98RxOLL._AC_UL320_.jpg",
-        brand: "Levi's",
-        title: "Men's 511 Styled Slim Fit Jeans",
-        price: "1,649",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.9",
-      }
-    }, {
-      card25: {
-        image: "https://m.media-amazon.com/images/I/81c5cscWSAL._AC_UL320_.jpg",
-        brand: "U.S. POLO ASSN.",
-        title: "Men's Jeans",
-        price: "1,349",
-        delivery: "FREE Delivery by Amazon",
-        rating: "4",
-        cateogry: "pants",
-
-      }
-    }, {
-      card26: {
-        image: "https://m.media-amazon.com/images/I/51VY-VupBYL._AC_UL320_.jpg",
-        brand: "Levi's",
-        title: "Men's 512 Slim Tapered Fit Stretchable Jeans",
-        price: "1,619",
-        delivery: "FREE Delivery by Amazon",
-        rating: "3.9",
-        cateogry: "pants",
-        badge: "Deal of the Day"
-      }
-    }, {
-      card27: {
-        image: "https://m.media-amazon.com/images/I/71xZHNDtdqL._AC_UL320_.jpg",
-        brand: "Peter England",
-        title: "Men Regular Fit Jeans",
-        price: "949",
-        cateogry: "pants",
-        rating: "5",
-      }
-    }, {
-      card28: {
-        image: "https://m.media-amazon.com/images/I/81Jk3frRCML._AC_UL320_.jpg",
-        brand: "Urbano Fashion",
-        title: "Men's Slim Fit Washed Jeans Stretchable",
-        price: "749",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.5",
-      }
-    }, {
-      card29: {
-        image: "https://m.media-amazon.com/images/I/51dlhi2jZuL._AC_UL320_.jpg",
-        brand: "Levi's",
-        title: "Men's 512 Slim Tapered Fit High-Rise Jeans",
-        price: "2,429",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.6",
-      }
-    }, {
-      card30: {
-        image: "https://m.media-amazon.com/images/I/61MnQqLAVOL._AC_UL320_.jpg",
-        brand: "Urbano Fashion",
-        title: "Men's Slim Fit Black Stretch Jeans",
-        price: "587",
-        delivery: "FREE Delivery by Amazon",
-        cateogry: "pants",
-        rating: "3.9"
-      }
-    }
-
-  ]
-};
-
-
-
-
-
-document.getElementById("searchicon").addEventListener("click", function(){
-
-  let searchval= document.getElementById("search").value
-
-  let searchdata=[]
-  let flag= false;
-
-  for (let i = 0; i < pantData.products.length; i++) {
-    for (let key in pantData.products[i]) {
-        if(searchval===pantData.products[i][key].category){
-          flag= true;
-          searchdata.push(pantData.products[i][key].category)
-          break;
-        }
-    }
-  }
-
-  if(flag){
-    let seacrhpage= document.createElement("a")
-    seacrhpage.setAttribute("href", "../Homepage/search.html")
-    seacrhpage.click()
-
-  }
 
 })
+
