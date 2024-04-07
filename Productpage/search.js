@@ -44,6 +44,24 @@ function display(data) {
   data.forEach((element) => {
     let carddiv = document.createElement("div");
     carddiv.setAttribute("class", "carddiv");
+    carddiv.style.cursor = "pointer";
+
+    carddiv.addEventListener("click", function () {
+      let matchcarddata = [];
+
+      data.forEach((Element) => {
+        if (Element === element) {
+          matchcarddata.push(element);
+          localStorage.setItem("matchcarddata", JSON.stringify(matchcarddata));
+          let cartpage= document.createElement("a")
+          cartpage.setAttribute("href", "../Cartpage/cart.html")
+          cartpage.click()
+
+        }
+      });
+
+      
+    });
 
     let imgdiv = document.createElement("div");
     imgdiv.setAttribute("class", "imgdiv");
@@ -102,7 +120,6 @@ document.getElementById("fivestar").addEventListener("click", function () {
     }
   });
 
-  console.log(fivestarproducts);
   display(fivestarproducts);
 });
 
@@ -119,7 +136,6 @@ document.getElementById("fourstar").addEventListener("click", function () {
     }
   });
 
-  console.log(fourstarproducts);
   display(fourstarproducts);
 });
 
@@ -136,7 +152,6 @@ document.getElementById("threestar").addEventListener("click", function () {
     }
   });
 
-  console.log(threestarproducts);
   display(threestarproducts);
 });
 
@@ -161,7 +176,6 @@ document.getElementById("AllenSolly").addEventListener("change", function () {
     }
   });
 
-  console.log(AllenSollyproducts);
 
   display(AllenSollyproducts);
 });
@@ -174,8 +188,6 @@ document.getElementById("Levi's").addEventListener("change", function () {
       Levisproducts.push(element);
     }
   });
-
-  console.log(Levisproducts);
 
   display(Levisproducts);
 });
@@ -191,8 +203,6 @@ document
       }
     });
 
-    console.log(UrbanoFashionproducts);
-
     display(UrbanoFashionproducts);
   });
 
@@ -205,7 +215,6 @@ document.getElementById("PeterEngland").addEventListener("change", function () {
     }
   });
 
-  console.log(PeterEnglandproducts);
 
   display(PeterEnglandproducts);
 });
@@ -264,8 +273,7 @@ document.getElementById("price1").addEventListener("click", function () {
     }
   });
 
-  console.log(threehundredproducts);
-  display(threehundredproducts)
+  display(threehundredproducts);
 });
 
 document.getElementById("price2").addEventListener("click", function () {
@@ -277,8 +285,7 @@ document.getElementById("price2").addEventListener("click", function () {
     }
   });
 
-  console.log(threehundredproducts);
-  display(threehundredproducts)
+  display(threehundredproducts);
 });
 
 document.getElementById("price3").addEventListener("click", function () {
@@ -290,8 +297,7 @@ document.getElementById("price3").addEventListener("click", function () {
     }
   });
 
-  console.log(threehundredproducts);
-  display(threehundredproducts)
+  display(threehundredproducts);
 });
 
 document.getElementById("price4").addEventListener("click", function () {
@@ -303,8 +309,7 @@ document.getElementById("price4").addEventListener("click", function () {
     }
   });
 
-  console.log(threehundredproducts);
-  display(threehundredproducts)
+  display(threehundredproducts);
 });
 
 document.getElementById("price5").addEventListener("click", function () {
@@ -316,6 +321,5 @@ document.getElementById("price5").addEventListener("click", function () {
     }
   });
 
-  console.log(threehundredproducts);
-  display(threehundredproducts)
+  display(threehundredproducts);
 });

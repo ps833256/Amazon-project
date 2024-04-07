@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="search.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,60 +18,63 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="navbarcont">
       <div id="logodiv">
         <img src="Amazonlogo.png" alt="" id="logo" />
       </div>
-  
+
       <div id="deliveringdiv">
         <div>
           <i class="fa-solid fa-location-dot" id="location"></i>
         </div>
-  
+
         <div id="locationdiv">
           <div>
             <p id="deliverto">Delivering to Delhi 110008</p>
           </div>
-  
+
           <div>
             <p id="update">Update location</p>
           </div>
         </div>
       </div>
-  
+
       <div id="searchbarcont">
         <select name="" id="">
           <option value="All">All</option>
         </select>
-  
+
         <input type="search" placeholder="Search Amazon.in" id="search" />
-  
+
         <div id="searchicon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
-  
+
       <div id="lanselectdiv" class="dropdown">
         <img src="64.png" alt="" id="flag" />
         <select name="" id="lang">
           <option value="English">EN</option>
         </select>
-  
+
         <div id="langhoverdiv">
           <div id="langmaindiv">
             <div id="option1">
-              <input type="radio" id="english" name="Language" value="english" />
+              <input
+                type="radio"
+                id="english"
+                name="Language"
+                value="english"
+              />
               <label for="english">English-EN</label>
             </div>
             <div class="options">
               <input type="radio" id="hindi" name="Language" value="hindi" />
               <label for="Hindi">हिन्दी - HI </label>
             </div>
-  
+
             <div class="options">
               <input type="radio" id="TA" name="Language" value="TA" />
               <label for="TA">தமிழ் - TA </label>
@@ -82,7 +83,7 @@
               <input type="radio" id="TE" name="Language" value="TE" />
               <label for="TE">తెలుగు - TE</label>
             </div>
-  
+
             <div class="options">
               <input type="radio" id="KN" name="Language" value="KN" />
               <label for="KN">ಕನ್ನಡ - KN</label>
@@ -91,53 +92,53 @@
               <input type="radio" id="ML" name="Language" value="ML" />
               <label for="ML">മലയാളം - ML </label>
             </div>
-  
+
             <div class="options">
               <input type="radio" id="BN" name="Language" value="BN" />
               <label for="BN"> বাংলা - BN</label>
             </div>
-  
+
             <div class="options">
               <input type="radio" id="MR" name="Language" value="MR" />
               <label for="MR"> मराठी - MR</label>
             </div>
           </div>
-  
+
           <div id="learnmore">
             <a href="#">Learn More</a>
           </div>
-  
+
           <div id="youareshopping">
             <img src="64.png" alt="" id="inflag" />
             <p>You are shopping on Amazon.in</p>
           </div>
-  
+
           <div id="region">
             <a href="#" id="Region">Country/Region</a>
           </div>
         </div>
       </div>
-  
+
       <div id="signindiv" class="dropdown">
         <div class="dropbtn">
           <p id="hello">Hello, sign in</p>
           <p id="account">Account & Lists</p>
         </div>
-  
+
         <div class="backdrop"></div>
-  
+
         <div id="signinhoverdiv">
           <div id="signinhoverbtndiv">
             <a href="../Authentication/Login/login.html">
               <button id="afterhoverbtn">Sign in</button>
             </a>
-  
+
             <div id="newcustomer">
               <p>New customer?</p>
               <a href="#">Start here.</a>
             </div>
           </div>
-  
+
           <div id="secondsectioncontainer">
             <div id="yourlistdiv">
               <p>Your Lists</p>
@@ -147,7 +148,7 @@
               <a href="#">Discover Your Style</a>
               <a href="#">Explore Showroom</a>
             </div>
-  
+
             <div id="youraccountdiv">
               <p>Your Account</p>
               <a href="#">Your Account</a><br />
@@ -165,28 +166,29 @@
           </div>
         </div>
       </div>
-  
+
       <div id="returndiv">
         <p id="returns">Returns</p>
         <p id="orders">& Orders</p>
       </div>
-  
+
       <div id="cartdiv">
         <i class="fa-solid fa-cart-shopping"></i>
         <p>Cart</p>
       </div>
     </div>
-  
-  
+
     <!-- Navbar-2 -->
-  
+
     <div id="navbar2cont">
       <div id="allicon">
         <i class="fa-solid fa-bars" id="baricon"></i>
         <p>ALL</p>
         <div id="menuoptions">
           <a href="#">Fresh</a>
-          <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">Amazon miniTV</a>
+          <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav"
+            >Amazon miniTV</a
+          >
           <a href="#">Sell</a>
           <a href="#">Best Sellers</a>
           <a href="#">Mobiles</a>
@@ -195,13 +197,13 @@
           <a href="#">Customer Service</a>
           <a href="#">Prime</a>
         </div>
-  
+
         <div id="amzonminitv">
           <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">
             <img src="mini tv.jpg" alt="" />
           </a>
         </div>
-  
+
         <div id="allhoverdiv">
           <div id="hellosignnav">
             <div id="hellofirstsec">
@@ -212,7 +214,7 @@
               <i class="fa-solid fa-xmark" id="Crossicon"></i>
             </div>
           </div>
-  
+
           <div id="trendingmenuoptionscont">
             <h4 class="headings">Trending</h4>
             <p>Best Sellers</p>
@@ -245,193 +247,26 @@
         </div>
       </div>
     </div>
-  
-    <div id="desktopdiv">
-      <div id="filterscontainer">
-      
-        <div id="filter1">
-          <div id="ratingdiv">
-            <p id="reviewheading">Customer Review</p>
-            <div id="fivestar">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p id="fivestarup">& Up</p>
-            </div>
+
+    <div id="cardcont">
     
-            <div id="fourstar">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <p id="fourstarup">& Up</p>
-            </div>
-    
-            <div id="threestar">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <p id="threestarup">& Up</p>
-            </div>
-    
-            <div id="twostar">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <p id="twostarup">& Up</p>
-            </div>
-    
-            <div id="onestar">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <p id="onestarup">& Up</p>
-            </div>
-    
-    
-    
-        </div>
-          
+        <div id="productimgdiv">
+
         </div>
 
-        <div id="filter2">
-          <div id="branddiv">
-            <p id="brandheading">Brands</p>
-            <div id="brand1">
-                <label for="Arrow">
-                    <input type="checkbox" id="Arrow" class="brand-checkbox" value="Arrow" name="Arrow" onclick="onlyOne(this)">
-                    Arrow
-                </label>
-    
-            </div>
-    
-            <div id="brand2">
-                <label for="AllenSolly">
-                    <input type="checkbox" id="AllenSolly" class="brand-checkbox" value="Allen Solly" name="AllenSolly" onclick="onlyOne(this)">
-                    Allen Solly
-                </label>
-    
-            </div>
-    
-    
-            <div id="brand3">
-                <label for="Levi's">
-                    <input type="checkbox" id="Levi's" class="brand-checkbox" value="Levi's" name="Levi's" onclick="onlyOne(this)">
-                    Levi's
-                </label>
-    
-            </div>
-    
-            <div id="brand4">
-                <label for="UrbanoFashion">
-                    <input type="checkbox" id="UrbanoFashion" class="brand-checkbox" value="Urbano Fashion"
-                        name="UrbanoFashion" onclick="onlyOne(this)">
-                    Urbano Fashion
-                </label>
-    
-            </div>
-    
-            <div id="brand5">
-                <label for="PeterEngland">
-                    <input type="checkbox" id="PeterEngland" class="brand-checkbox" value="Peter England"
-                        name="PeterEngland" onclick="onlyOne(this)">
-                    Peter England
-                </label>
-    
-            </div>
-    
-            <div id="brand6">
-                <label for="PepeJeans">
-                    <input type="checkbox" id="PepeJeans" class="brand-checkbox" value="Pepe Jeans" name="PepeJeans" onclick="onlyOne(this)">
-                    Pepe Jeans
-                </label>
-    
-            </div>
-    
-    
-            <div id="brand7">
-                <label for="U.S. POLO ASSN.">
-                    <input type="checkbox" id="U.S. POLO ASSN." class="brand-checkbox" value="U.S. POLO ASSN."
-                        name="U.S. POLO ASSN." onclick="onlyOne(this)">
-                    U.S. POLO ASSN.
-                </label>
-    
-            </div>
-    
-            <div id="brand8">
-                <label for="Billford">
-                    <input type="checkbox" id="Billford" class="brand-checkbox" value="Billford" name="Billford" onclick="onlyOne(this)">
-                    Billford
-                </label>
-    
-            </div>
-    
-    
-        </div>
-    
-    
+        <div id="descriptiondiv">
+
         </div>
 
-        <div id="filter3">
-          <div id="pricediv">
-            <p id="priceheading">Price</p>
-    
-            <div id="price1">
-                Under ₹300
-    
-            </div>
-    
-            <div id="price2">
-                ₹300 - ₹500
-    
-            </div>
-    
-            <div id="price3">
-                ₹500 - ₹1,000
-    
-            </div>
-    
-            <div id="price4">
-                ₹1,000 - ₹1,500
-    
-            </div>
-    
-            <div id="price5">
-                Over ₹1,500
-    
-            </div>
-    
-    
-    
+        <div id="pricedivsection">
+
         </div>
-    
-        </div>
-      
-  
-        
-      </div>
-    
-      <div id="cont">
-    
-      </div>
-  
+
     </div>
-  
-   
-  
-  
-  
-  
-  
+
+
+
+
   </body>
-  <script src="search.js"></script>
+  <script src="cart.js"></script>
 </html>
