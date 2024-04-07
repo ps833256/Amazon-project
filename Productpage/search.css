@@ -1073,3 +1073,73 @@ overflow: hidden;
   color: #c45500;
   cursor: pointer;
 }
+
+
+#price1:hover {
+  color: #c45500;
+  cursor: pointer;
+}
+
+#price2:hover {
+  color: #c45500;
+  cursor: pointer;
+}
+
+#price3:hover {
+  color: #c45500;
+  cursor: pointer;
+}
+
+#price4:hover {
+  color: #c45500;
+  cursor: pointer;
+}
+
+
+#price5:hover {
+  color: #c45500;
+  cursor: pointer;
+}
+
+
+
+#price1 {
+  color: #0F1111;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#price2 {
+  color: #0F1111;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#price3 {
+  color: #0F1111;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#price4 {
+  color: #0F1111;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#price5 {
+  color: #0F1111;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#priceheading {
+  color: #0F1111;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#filter3{
+  margin-top: 30px;
+  padding: 12px;
+}

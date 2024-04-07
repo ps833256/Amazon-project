@@ -140,154 +140,182 @@ document.getElementById("threestar").addEventListener("click", function () {
   display(threestarproducts);
 });
 
-
 document.getElementById("Arrow").addEventListener("change", function () {
+  let Arrowproducts = [];
 
-  let Arrowproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand===document.getElementById("Arrow").value) {
-          Arrowproducts.push(element)
-          
-      }
-
+  searcheddata.forEach((element) => {
+    if (element.brand === document.getElementById("Arrow").value) {
+      Arrowproducts.push(element);
+    }
   });
 
-  display(Arrowproducts)
-
-  
-})
+  display(Arrowproducts);
+});
 
 document.getElementById("AllenSolly").addEventListener("change", function () {
+  let AllenSollyproducts = [];
 
-  let AllenSollyproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("AllenSolly").value) {
-        AllenSollyproducts.push(element)
-          
-      }
-
+  searcheddata.forEach((element) => {
+    if (element.brand === document.getElementById("AllenSolly").value) {
+      AllenSollyproducts.push(element);
+    }
   });
 
-  console.log(AllenSollyproducts)
+  console.log(AllenSollyproducts);
 
-  display(AllenSollyproducts)
-
-  
-})
-
-
+  display(AllenSollyproducts);
+});
 
 document.getElementById("Levi's").addEventListener("change", function () {
+  let Levisproducts = [];
 
-  let Levisproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("Levi's").value) {
-        Levisproducts.push(element)
-          
-      }
-
+  searcheddata.forEach((element) => {
+    if (element.brand === document.getElementById("Levi's").value) {
+      Levisproducts.push(element);
+    }
   });
 
-  console.log(Levisproducts)
+  console.log(Levisproducts);
 
-  display(Levisproducts)
+  display(Levisproducts);
+});
 
-  
-})
+document
+  .getElementById("UrbanoFashion")
+  .addEventListener("change", function () {
+    let UrbanoFashionproducts = [];
 
-
-document.getElementById("UrbanoFashion").addEventListener("change", function () {
-
-  let UrbanoFashionproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("UrbanoFashion").value) {
-        UrbanoFashionproducts.push(element)
-          
+    searcheddata.forEach((element) => {
+      if (element.brand === document.getElementById("UrbanoFashion").value) {
+        UrbanoFashionproducts.push(element);
       }
+    });
 
+    console.log(UrbanoFashionproducts);
+
+    display(UrbanoFashionproducts);
   });
-
-  console.log(UrbanoFashionproducts)
-
-  display(UrbanoFashionproducts)
-
-  
-})
-
 
 document.getElementById("PeterEngland").addEventListener("change", function () {
+  let PeterEnglandproducts = [];
 
-  let PeterEnglandproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("PeterEngland").value) {
-        PeterEnglandproducts.push(element)
-          
-      }
-
+  searcheddata.forEach((element) => {
+    if (element.brand === document.getElementById("PeterEngland").value) {
+      PeterEnglandproducts.push(element);
+    }
   });
 
-  console.log(PeterEnglandproducts)
+  console.log(PeterEnglandproducts);
 
-  display(PeterEnglandproducts)
-
-  
-})
-
+  display(PeterEnglandproducts);
+});
 
 document.getElementById("PepeJeans").addEventListener("change", function () {
+  let PepeJeansproducts = [];
 
-  let PepeJeansproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("PepeJeans").value) {
-        PepeJeansproducts.push(element)
-          
-      }
-
+  searcheddata.forEach((element) => {
+    if (element.brand === document.getElementById("PepeJeans").value) {
+      PepeJeansproducts.push(element);
+    }
   });
 
-  display(PepeJeansproducts)
+  display(PepeJeansproducts);
+});
 
-  
-})
+document
+  .getElementById("U.S. POLO ASSN.")
+  .addEventListener("change", function () {
+    let USPOLOASSNproducts = [];
 
-
-document.getElementById("U.S. POLO ASSN.").addEventListener("change", function () {
-
-  let USPOLOASSNproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("U.S. POLO ASSN.").value) {
-        USPOLOASSNproducts.push(element)
-          
+    searcheddata.forEach((element) => {
+      if (element.brand === document.getElementById("U.S. POLO ASSN.").value) {
+        USPOLOASSNproducts.push(element);
       }
+    });
 
+    display(USPOLOASSNproducts);
   });
-
-  display(USPOLOASSNproducts)
-
-  
-})
-
 
 document.getElementById("Billford").addEventListener("change", function () {
+  let Billfordproducts = [];
 
-  let Billfordproducts= []
- 
-  searcheddata.forEach(element => {
-      if (element.brand=== document.getElementById("Billford").value) {
-        Billfordproducts.push(element)
-          
-      }
-
+  searcheddata.forEach((element) => {
+    if (element.brand === document.getElementById("Billford").value) {
+      Billfordproducts.push(element);
+    }
   });
 
-  display(Billfordproducts)
+  display(Billfordproducts);
+});
 
-  
-})
+function onlyOne(checkbox) {
+  var checkboxes = document.querySelectorAll(".brand-checkbox");
+  checkboxes.forEach((item) => {
+    if (item !== checkbox) item.checked = false;
+  });
+}
+
+document.getElementById("price1").addEventListener("click", function () {
+  let threehundredproducts = [];
+
+  searcheddata.forEach((element) => {
+    if (Number(element.price) <= 300) {
+      threehundredproducts.push(element);
+    }
+  });
+
+  console.log(threehundredproducts);
+  display(threehundredproducts)
+});
+
+document.getElementById("price2").addEventListener("click", function () {
+  let threehundredproducts = [];
+
+  searcheddata.forEach((element) => {
+    if (Number(element.price) >= 300 && Number(element.price) <= 500) {
+      threehundredproducts.push(element);
+    }
+  });
+
+  console.log(threehundredproducts);
+  display(threehundredproducts)
+});
+
+document.getElementById("price3").addEventListener("click", function () {
+  let threehundredproducts = [];
+
+  searcheddata.forEach((element) => {
+    if (Number(element.price) >= 500 && Number(element.price) <= 1000) {
+      threehundredproducts.push(element);
+    }
+  });
+
+  console.log(threehundredproducts);
+  display(threehundredproducts)
+});
+
+document.getElementById("price4").addEventListener("click", function () {
+  let threehundredproducts = [];
+
+  searcheddata.forEach((element) => {
+    if (Number(element.price) >= 1000 && Number(element.price) <= 1500) {
+      threehundredproducts.push(element);
+    }
+  });
+
+  console.log(threehundredproducts);
+  display(threehundredproducts)
+});
+
+document.getElementById("price5").addEventListener("click", function () {
+  let threehundredproducts = [];
+
+  searcheddata.forEach((element) => {
+    if (Number(element.price) >= 1500) {
+      threehundredproducts.push(element);
+    }
+  });
+
+  console.log(threehundredproducts);
+  display(threehundredproducts)
+});
