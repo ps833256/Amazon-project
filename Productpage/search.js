@@ -84,7 +84,7 @@ function display(data) {
 
     let price = document.createElement("p");
     price.setAttribute("class", "price");
-    price.innerText = ` M.R.P: ₹${element.price}`;
+    price.innerText = ` M.R.P: ${element.price}`;
 
     let del = document.createElement("p");
     del.setAttribute("class", "delivery");
