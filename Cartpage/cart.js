@@ -102,7 +102,7 @@ function carddisplay(data) {
         titlediv.append(titleheading)
 
         document.getElementById("productimgdiv").append(imagediv)
-        document.getElementById("descriptiondiv").append(titlediv, searchanchor, sepator, pricesymbol, inclusive )
+        document.getElementById("descriptiondiv").prepend(titlediv, searchanchor, sepator, pricesymbol, inclusive )
         document.getElementById("pricedivsection").prepend(netPricesymbol)
 
         
