@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div id="navbarcont">
+        <div id="logodiv">
+          <img src="Amazonlogo.png" alt="" id="logo" />
+        </div>
+  
+        <div id="deliveringdiv">
+          <div>
+            <i class="fa-solid fa-location-dot" id="location"></i>
+          </div>
+  
+          <div id="locationdiv">
+            <div>
+              <p id="deliverto">Delivering to Delhi 110008</p>
+            </div>
+  
+            <div>
+              <p id="update">Update location</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="searchbarcont">
+          <select name="" id="">
+            <option value="All">All</option>
+          </select>
+  
+          <input type="search" placeholder="Search Amazon.in" id="search" />
+  
+          <div id="searchicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+  
+        <div id="lanselectdiv" class="dropdown">
+          <img src="64.png" alt="" id="flag" />
+          <select name="" id="lang">
+            <option value="English">EN</option>
+          </select>
+  
+          <div id="langhoverdiv">
+            <div id="langmaindiv">
+              <div id="option1">
+                <input
+                  type="radio"
+                  id="english"
+                  name="Language"
+                  value="english"
+                />
+                <label for="english">English-EN</label>
+              </div>
+              <div class="options">
+                <input type="radio" id="hindi" name="Language" value="hindi" />
+                <label for="Hindi">हिन्दी - HI </label>
+              </div>
+  
+              <div class="options">
+                <input type="radio" id="TA" name="Language" value="TA" />
+                <label for="TA">தமிழ் - TA </label>
+              </div>
+              <div class="options">
+                <input type="radio" id="TE" name="Language" value="TE" />
+                <label for="TE">తెలుగు - TE</label>
+              </div>
+  
+              <div class="options">
+                <input type="radio" id="KN" name="Language" value="KN" />
+                <label for="KN">ಕನ್ನಡ - KN</label>
+              </div>
+              <div class="options">
+                <input type="radio" id="ML" name="Language" value="ML" />
+                <label for="ML">മലയാളം - ML </label>
+              </div>
+  
+              <div class="options">
+                <input type="radio" id="BN" name="Language" value="BN" />
+                <label for="BN"> বাংলা - BN</label>
+              </div>
+  
+              <div class="options">
+                <input type="radio" id="MR" name="Language" value="MR" />
+                <label for="MR"> मराठी - MR</label>
+              </div>
+            </div>
+  
+            <div id="learnmore">
+              <a href="#">Learn More</a>
+            </div>
+  
+            <div id="youareshopping">
+              <img src="64.png" alt="" id="inflag" />
+              <p>You are shopping on Amazon.in</p>
+            </div>
+  
+            <div id="region">
+              <a href="#" id="Region">Country/Region</a>
+            </div>
+          </div>
+        </div>
+  
+        <div id="signindiv" class="dropdown">
+          <div class="dropbtn">
+            <p id="hello">Hello, sign in</p>
+            <p id="account">Account & Lists</p>
+          </div>
+  
+          <div class="backdrop"></div>
+  
+          <div id="signinhoverdiv">
+            <div id="signinhoverbtndiv">
+              <a href="../Authentication/Login/login.html">
+                <button id="afterhoverbtn">Sign in</button>
+              </a>
+  
+              <div id="newcustomer">
+                <p>New customer?</p>
+                <a href="#">Start here.</a>
+              </div>
+            </div>
+  
+            <div id="secondsectioncontainer">
+              <div id="yourlistdiv">
+                <p>Your Lists</p>
+                <a href="#">Create a Wish List</a>
+                <a href="#">Wish from Any Website</a>
+                <a href="#">Baby Wishlist</a>
+                <a href="#">Discover Your Style</a>
+                <a href="#">Explore Showroom</a>
+              </div>
+  
+              <div id="youraccountdiv">
+                <p>Your Account</p>
+                <a href="#">Your Account</a><br />
+                <a href="#">Your Orders</a><br />
+                <a href="#">Your Wish List</a><br />
+                <a href="#">Your Recommendations</a><br />
+                <a href="#">Your Prime Membership</a><br />
+                <a href="#">Your Prime Video</a><br />
+                <a href="#">Your Subscribe & Save Items</a><br />
+                <a href="#">Memberships & Subscriptions</a><br />
+                <a href="#">Your Seller Account</a><br />
+                <a href="#">Manage Your Content and Devices</a><br />
+                <a href="#">Your Free Amazon Business Account</a><br />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="returndiv">
+          <p id="returns">Returns</p>
+          <p id="orders">& Orders</p>
+        </div>
+  
+        <div id="cartdiv">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Cart</p>
+        </div>
+      </div>
+
+       <!-- Navbar2 -->
+
+    <div id="navbar2cont">
+        <div id="allicon">
+          <i class="fa-solid fa-bars" id="baricon"></i>
+          <p>ALL</p>
+          <div id="menuoptions">
+            <a href="#">Fresh</a>
+            <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav"
+              >Amazon miniTV</a
+            >
+            <a href="#">Sell</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Mobiles</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Electronics</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Prime</a>
+          </div>
+  
+          <div id="amzonminitv">
+            <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">
+              <img src="mini tv.jpg" alt="" />
+            </a>
+          </div>
+  
+          <div id="allhoverdiv">
+            <div id="hellosignnav">
+              <div id="hellofirstsec">
+                <i class="fa-solid fa-user"></i>
+                <p id="profilesignin">Hello, Sign in</p>
+              </div>
+              <div id="crossicon">
+                <i class="fa-solid fa-xmark" id="Crossicon"></i>
+              </div>
+            </div>
+  
+            <div id="trendingmenuoptionscont">
+              <h4 class="headings">Trending</h4>
+              <p>Best Sellers</p>
+              <p>New Releases</p>
+              <h5 class="borders">Movers and Shakers</h5>
+              <h4 class="headings">Digital Content and Devices</h4>
+              <p>Echo & Alexa</p>
+              <p>Fire TV</p>
+              <p>Kindle E-Readers & eBooks</p>
+              <p>Audible Audiobooks</p>
+              <p>Amazon Prime Video</p>
+              <h5 class="borders">Amazon Prime Music</h5>
+              <h4 class="headings">Shop by Category</h4>
+              <p>Mobiles, Computers</p>
+              <p>TV, Appliances, Electronics</p>
+              <p>Men's Fashion</p>
+              <p>Women's Fashion</p>
+              <h5 class="borders">See all</h5>
+              <h4 class="headings">Programs & Features</h4>
+              <p>Amazon Pay</p>
+              <p>Gift Cards & Mobile Recharges</p>
+              <p>Amazon Launchpad</p>
+              <p>Handloom and Handicrafts</p>
+              <h5 class="borders">See all</h5>
+              <h4 class="headings">Help & Settings</h4>
+              <p>Your Account</p>
+              <p>Customer Service</p>
+              <h5 class="borders">Sign</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id="shoppingcardcontainer">
+
+        <div id="shoppingcart">
+            <div id="shoppingcartheading">
+                <h1>Shopping Cart</h1>
+
+            </div>
+
+            <hr>
+
+            <div id="shoppingcartsection">
+                
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+<script src="shopping.js"></script>
+</html>

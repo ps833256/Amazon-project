@@ -41,9 +41,6 @@ if (matchedCardData===null) {
     
 }
 
-console.log(matchedCardData)
-
-
 function carddisplay(data) {
 
 
@@ -111,3 +108,13 @@ function carddisplay(data) {
 }
 
 carddisplay(matchedCardData)
+
+
+document.getElementById("addtocartbtn").addEventListener("click", function(){
+
+  let shoppingcart= document.createElement("a")
+  shoppingcart.setAttribute("href", "../Shoppingcart/shopping.html")
+  shoppingcart.click()
+  
+
+})
