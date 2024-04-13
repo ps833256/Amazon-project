@@ -818,6 +818,7 @@
 }
 
 #shoppingcart{
+  margin: 10px;
 width: 80%;
 background-color: white;
  padding: 10px;
@@ -832,6 +833,7 @@ background-color: white;
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 
@@ -849,5 +851,292 @@ background-color: white;
 
 #shoppingcartimg{
   width: 100%;
-  height: 180px;
+  height: 100%;
 }
+
+#titledivcont{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: start;
+
+}
+
+#title{
+  font-size: 18px;
+  color: #0f1111;
+}
+
+#instockdiv{
+  margin-top: 10px;
+
+}
+
+#instockdiv p{
+  font-size: 12px;
+  color: #5d7a5d;
+}
+
+#eligiblediv p{
+  font-size: 12px;
+  color: #0f1111;
+
+}
+
+#eligiblediv{
+  margin-top: 5px;
+}
+
+#fullfilleddiv{
+  margin-top: 5px;
+}
+
+#sizediv{
+  margin-top: 5px;
+  font-size: 12px;
+  color: #0f1111;
+}
+
+#colordiv{
+  margin-top: 5px;
+  font-size: 12px;
+  color: #0f1111;
+
+}
+
+#quantitydivsection{
+  gap: 30px;
+  display: flex;
+  align-items: center;
+
+}
+
+#quantitydiv{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0.001px solid grey;
+  padding: 3px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background: #F0F2F2;
+  box-shadow: 0 2px 5px rgba(15,17,17,.15)
+}
+
+#quantitydiv select{
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #F0F2F2;
+}
+
+#quantitydiv label{
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#quantitydiv:hover{
+    outline: 0;
+    background-color: #F7FEFF;
+    border-color: #007185;
+    box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15,17,17,.15) inset;
+
+}
+
+#delanchorbtn{
+  margin-top: 10px;
+}
+
+#delbtn{
+  text-decoration: none;
+  font-size: 12px;
+  color: #0066C0;
+}
+
+#delbtn:hover{
+  text-decoration: underline;
+}
+
+#saveforlaterdiv{
+  margin-top: 10px;
+
+}
+
+#sharediv{
+  margin-top: 10px;
+
+}
+
+#saveforlaterdiv p{
+  font-size: 12px;
+  color: #0066C0;
+
+}
+
+#sharediv p{
+  font-size: 12px;
+  color: #0066C0;
+
+}
+
+#sharediv p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#saveforlaterdiv p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#pricedivsection{
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#limited{
+  font-size: 12px;
+  color: #CC0C39;
+  font-weight: 700;
+
+}
+
+#pricedivcont{
+  gap: 4px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+
+}
+
+#symbol{
+  font-size: 10px;
+}
+
+#price{
+  font-size: 18px;
+  color: #0f1111;
+  font-weight: 700;
+}
+
+
+
+hr {
+  width: 100%;
+  margin-top: 15px;
+  height: 0.001px; 
+  background-color: #F7FEFF; 
+  
+}
+
+#subtotaldiv{
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: flex-end;
+
+}
+#subtotal{
+  font-size: 18px;
+  color: #0F1111;
+}
+
+#subtotalpricediv{
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+
+#currencysymbol{
+  font-size: 10px;
+}
+
+#subtotalprice{
+  font-size: 18px;
+  color: #0F1111;
+  font-weight: 700;
+}
+
+#rightsectiondiv{
+  width: 20%;
+  height: 364px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+}
+#metrebarwithdelprice{
+  gap: 10px;
+  width: 80%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+#metrebar{
+  width: 90%;
+  height: 15px;
+  background-color: #009674;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: inset 0 0 0 1px #067D62
+}
+
+#delprice{
+  font-size: 14px;
+  color: #0F1111;
+}
+
+#eligibleforfree b{
+  color: #067D62;
+  font-size: 12px;
+
+}
+
+#checkoutoptio{
+  font-size: 11px;
+  color: #565959;
+
+}
+
+#subtotalright{
+  font-size: 18px;
+  color: #0f1111;
+}
+
+#subtotalrightsection{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#proceedtobuydiv{
+  margin-top: 10px;
+
+}
+
+#prceddtobuybtn{
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+  background-color: #FFD814;
+  height: 100%;
+  width: 100%;
+  padding: 4px 66px;
+}
+
