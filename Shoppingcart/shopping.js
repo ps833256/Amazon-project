@@ -91,29 +91,42 @@ function Carddisplay(data) {
     subtotalprice.setAttribute("id", "subtotalprice");
     subtotalprice.innerText = `${element.price}.00`;
 
-    let rightsectionprice= document.createElement("p")
-    rightsectionprice.setAttribute("id", "rightsectionprice")
-    rightsectionprice.innerText= `${element.price}.00`
+    let rightsectionprice = document.createElement("p");
+    rightsectionprice.setAttribute("id", "rightsectionprice");
+    rightsectionprice.innerText = `${element.price}.00`;
 
-
-    document.getElementById("rightsectionprice").append(rightsectionprice)
+    document.getElementById("rightsectionprice").append(rightsectionprice);
 
     document.getElementById("Quantity").addEventListener("change", function () {
       let quantity = document.getElementById("Quantity").value;
       if (quantity === 1) {
         subtotalprice.innerText = `${element.price}.00`;
+        rightsectionprice.innerText = `${element.price}.00`;
       } else {
         subtotalprice.innerText = `${element.price * quantity}.00`;
+        rightsectionprice.innerText = `${element.price* quantity}.00`;
       }
     });
 
-    document.getElementById("delbtn").addEventListener("click", function(){
 
-     document.getElementById("shoppingcardcontainer").innerHTML=null
 
-     
+document.getElementById("delbtn").addEventListener("click", function (event) {
+    event.preventDefault();
+
     
-    })
+    let shoppingCardContainer = document.getElementById("shoppingcardcontainer");
+    if (shoppingCardContainer) {
+        shoppingCardContainer.remove();
+       
+    }
+
+    
+
+    
+});
+
+  
+  
 
     document.getElementById("subtotalprice").append(subtotalprice);
     document.getElementById("price").append(price);
@@ -140,4 +153,8 @@ function Carddisplay(data) {
   });
 }
 
-Carddisplay(matchedCardData);
+
+  Carddisplay(matchedCardData)
+
+
+
