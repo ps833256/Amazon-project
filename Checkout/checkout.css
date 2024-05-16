@@ -1,0 +1,273 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#checkout-container {
+    /* width: 100%; */
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    border-color: #DDD !important;
+    border-style: solid !important;
+    border-width: 0 0 1px 0 !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+}
+
+#logodiv {
+    margin-left: 60px;
+    width: 191px;
+    height: 59px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 80%;
+    height: 80%;
+}
+
+#checkoutheading {
+    width: 753px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#checkoutheading h1 {
+    font-size: 28px;
+    color: #0f1111;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+#lockimgdiv {
+    width: 159px;
+    height: 59px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#deliveryaddresssection {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#selectaddress {
+    width: 649px;
+    height: auto;
+    margin-top: 10px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#selectaddress pre {
+    color: #c45500;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#submitbtnaddress {
+    padding: 10px 20px;
+    background-color: #FFD814;
+    color: #0F1111;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#cxaddress {
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: 0.7px solid #e7e7e7;
+}
+
+
+#addressinput {
+    border-radius: 4px;
+    border: 0.7px solid #e7e7e7;
+}
+
+#submitbtndiv {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #e7e7e7;
+    border-radius: 4px;
+}
+
+#paymentmethoddiv {
+    width: 649px;
+    height: auto;
+    margin-top: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 0.7px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+#selectpaymentmethodheading pre {
+    color: #c45500;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#CODoptions {
+    margin-top: 10px;
+}
+
+#CODoptions label {
+    font-size: 14px;
+    color: #0F1111;
+}
+
+.paymentmethods {
+    margin-top: 20px;
+}
+
+#selectedpaymentdiv {
+    margin-top: 20px;
+}
+
+#selectedpaymentbtn {
+    padding: 10px 20px;
+    background-color: #FFD814;
+    color: #0F1111;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#selectedpaymentdiv{
+    margin-top: 10px;
+    background-color: #e7e7e7;
+    border-radius: 4px;
+}
+
+#maincontainercheckout{
+    display: flex;
+    
+}
+
+#ordersummarydiv{
+    width: 300px;
+    border: 0.7px solid #e7e7e7;
+    border-radius: 4px;
+    height: 391px;
+    margin-top: 10px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 10px;
+  
+    
+}
+
+#placeyourorderdiv{
+    margin-top: 10px;
+}
+
+#placeyourorderbtn{
+    background-color: #FFD814;
+    color: #0F1111;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+#paymentquoutediv{
+    margin-top: 10px;
+}
+
+#paymentquoutediv p{
+    font-size: 12px;
+    color: #0F1111;
+}
+
+#ordersummarydiv hr{
+    margin-top: 10px;
+}
+
+#ordersummaryheadingdiv{
+    margin-top: 10px;
+    text-align: start;
+}
+
+#ordersummaryheadingdiv h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+
+
+#itemsdiv{
+    margin-top: 10px;
+    text-align: start;
+}
+
+#Deliverydiv{
+    margin-top: 10px;
+    text-align: start;
+
+}
+
+#Totaldiv{
+    margin-top: 10px;
+    text-align: start;
+
+}
+
+#PromotionApplieddiv{
+    margin-top: 10px;
+    text-align: start;
+
+}
+
+#itemsdiv pre{
+    font-size: 12px;
+}
+
+#Deliverydiv pre{
+    font-size: 12px;
+
+}
+#Totaldiv pre{
+    font-size: 12px;
+
+}
+
+#PromotionApplieddiv pre{
+    font-size: 12px;
+}
+
+#totalorderdiv{
+    margin-top: 10px;
+    text-align: start;
+}

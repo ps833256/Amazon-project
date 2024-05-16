@@ -794,7 +794,7 @@ input[type="radio"]:checked {
 }
 
 .cardcontainer {
-  background-color: red;
+  /* background-color: red; */
   flex-wrap: wrap;
   padding: 10px;
   gap: 20px;
@@ -804,8 +804,8 @@ input[type="radio"]:checked {
   align-items: center;
   width: 100%;
   height: auto;
-  /* position: absolute;
-  top: 50%; */
+  position: absolute;
+  top: 70%;
   
 }
 
@@ -933,14 +933,11 @@ color: #c45500;
 
 .cardcontainer2 {
   padding: 10px;
-  background-color: blue;
-  /* background-color: #E3E6E6; */
   gap: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* margin-top: 320px; */
-
+  margin-top: 750px;
   justify-content: center;
   width: 100%;
   height: auto;
@@ -997,6 +994,7 @@ color: #c45500;
   height: 300px;
   overflow: hidden;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  background-color: white;
 
 }  
 
@@ -1014,15 +1012,15 @@ color: #c45500;
 
 
 .headingsec{
-  width: 920px;
   height: 35px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
   margin-top: 10px;
-  padding: 10px;
-  margin-left: 10px;
+  /* padding: 5px; */
+  /* margin-left: 10px; */
+  background-color: white;
   
 }
 
@@ -1166,6 +1164,7 @@ color: #c45500;
       height: 300px;
       overflow: hidden;
       box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+      background-color: white;
   }
 
   #seealloffers a{
@@ -1253,6 +1252,7 @@ color: #c45500;
   height: 300px;
   overflow: hidden;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  background-color: white;
 
 }
 
@@ -1325,9 +1325,10 @@ color: #c45500;
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 300px;
+  height: 260px;
   overflow: hidden;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  background-color: white;
 
 }
 
@@ -1459,7 +1460,7 @@ color: #c45500;
 
 #footer-section1{
   padding: 10px;
-  margin-top: 60px;
+  margin-top: 10px;
   height: auto;
   width: 100%;
   display: flex;
@@ -1480,6 +1481,7 @@ border-bottom: 0.7px solid #e7e7e7;
 display: flex;
 flex-direction: column;
 align-items: center;
+background-color: white;
 
 }
 
@@ -1874,3 +1876,7 @@ color: #C7511F;
 
 
 } */
+
+body{
+  background-color: #E2E6E6;
+}
